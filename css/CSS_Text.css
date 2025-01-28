@@ -2,6 +2,7 @@
     background-color: rgb(245, 245, 245);
     scrollbar-width: thin;
     scrollbar-color: crimson black;
+    scroll-behavior: smooth;
 }
 
 p {

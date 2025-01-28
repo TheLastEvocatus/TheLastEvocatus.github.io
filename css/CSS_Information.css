@@ -96,6 +96,8 @@
     }
 
     .mobile {
-        bottom: env(safe-area-inset-bottom);
+        bottom: -65% !important;
+        display: block;
+        position: absolute !important;
     }
 }
