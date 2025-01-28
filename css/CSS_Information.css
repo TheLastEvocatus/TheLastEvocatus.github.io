@@ -96,5 +96,6 @@
     }
 
     .mobile {
+        -webkit-backface-visibility: visible;
     }
 }
