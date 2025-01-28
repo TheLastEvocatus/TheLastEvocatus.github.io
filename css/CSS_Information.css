@@ -96,9 +96,8 @@
     }
 
     .footer-mobile {
-        display: flex;
-        flex-direction: column;
-        flex: 1 0 auto;
-        flex-shrink: 0;
+        margin-bottom:0;
+        padding-bottom:0;
+        border-bottom:0;
     }
 }
