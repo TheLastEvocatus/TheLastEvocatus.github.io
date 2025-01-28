@@ -94,4 +94,11 @@
     .HF-height-RL {
         height: 24rem !important;
     }
+
+    .footer-mobile {
+        display: flex;
+        flex-direction: column;
+        flex: 1 0 auto;
+        flex-shrink: 0;
+    }
 }
