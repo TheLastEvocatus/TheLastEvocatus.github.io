@@ -3,7 +3,7 @@
 
 {
     animation: grain 8s steps(10) infinite;
-    background-image: url(../Images/Grain.png);
+    background-image: url(../images/Grain.png);
     content: "";
     height: 300%;
     left: -50%;
