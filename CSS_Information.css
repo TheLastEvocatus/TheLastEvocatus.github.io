@@ -1,0 +1,97 @@
+﻿.div-information {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.div-img, .div-table {
+    padding: 4rem 2rem 4rem 2rem;
+}
+
+.div-img {
+    width: 75rem;
+}
+
+.div-table {
+    width: 30rem;
+}
+
+.Text-Sign {
+    display: block;
+    position: relative;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8rem;
+    margin-bottom: 5rem;
+}
+
+.table-position {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 13rem;
+    margin-bottom: 10rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .icon {
+        margin-top: 1.5rem !important;
+    }
+
+    .Text-Sign {
+        margin-top: 8rem !important;
+        margin-bottom: 0rem !important;
+    }
+
+    .table-position {
+        margin-top: 2rem !important;
+        margin-bottom: 8rem !important;
+    }
+
+    .Text-Sign {
+        content: url(../images/Text_Sign_Mobile.png) !important;
+        margin-bottom: 0 !important;
+    }
+
+    .div-img {
+        padding: 3rem 3rem 0 3rem !important;
+    }
+
+    .div-table {
+        padding: 3rem 5rem 0 5rem !important;
+    }
+
+    .image-priority {
+        min-width: 64px !important;
+    }
+
+    .image {
+        max-width: 32px !important;
+    }
+
+    h1, h2, h3 {
+        font-size: 24px !important;
+    }
+
+    .footer-L {
+        transform: skewY(85deg) !important;
+    }
+
+    .footer-R {
+        transform: skewY(-85deg) !important;
+    }
+
+    .header-L {
+        transform: skewY(-85deg) !important;
+    }
+
+    .header-R {
+        transform: skewY(85deg) !important;
+    }
+
+    .HF-height-RL {
+        height: 24rem !important;
+    }
+}
