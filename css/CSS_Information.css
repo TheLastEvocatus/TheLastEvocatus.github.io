@@ -98,4 +98,10 @@
     .mobile {
         -webkit-backface-visibility: visible;
     }
+
+    .div-cog-TL {
+        top: -50rem !important;
+        left: -50rem !important;
+        width: 100rem !important;
+    }
 }
