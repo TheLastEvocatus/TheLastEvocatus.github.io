@@ -74,4 +74,24 @@
     h1, h2, h3 {
         font-size: 24px !important;
     }
+
+    .footer-L {
+        transform: skewY(85deg) !important;
+    }
+
+    .footer-R {
+        transform: skewY(-85deg) !important;
+    }
+
+    .header-L {
+        transform: skewY(-85deg) !important;
+    }
+
+    .header-R {
+        transform: skewY(85deg) !important;
+    }
+
+    .HF-height-RL {
+        height: 24rem !important;
+    }
 }
