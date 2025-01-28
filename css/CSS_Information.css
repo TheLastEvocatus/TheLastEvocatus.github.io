@@ -96,8 +96,6 @@
     }
 
     .mobile {
-        bottom: -80% !important;
-        display: block;
-        position: absolute !important;
+        -webkit-backface-visibility: hidden;
     }
 }
