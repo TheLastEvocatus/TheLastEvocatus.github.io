@@ -95,7 +95,7 @@
         height: 24rem !important;
     }
 
-    .footer-mobile {
+    .mobile {
         bottom: env(safe-area-inset-bottom);
     }
 }
