@@ -3,6 +3,7 @@
     scrollbar-width: thin;
     scrollbar-color: crimson black;
     scroll-behavior: smooth;
+    overflow-y: scroll;
 }
 
 p {
