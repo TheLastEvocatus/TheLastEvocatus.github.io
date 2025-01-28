@@ -96,6 +96,6 @@
     }
 
     .footer-mobile {
-        padding-bottom: calc(env(safe-area-inset-bottom) + 20px);
+        bottom: env(safe-area-inset-bottom);
     }
 }
