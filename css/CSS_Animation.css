@@ -1,0 +1,61 @@
+﻿.div-cog-BR {
+    position: fixed;
+    bottom: -20rem;
+    right: -21.5rem;
+    z-index: -100;
+    max-width: 50rem;
+}
+
+.img-cog-BR {
+    position: relative;
+    width: 100%;
+    opacity: 0.25;
+    animation: rotate-BR 3s infinite;
+}
+
+@keyframes rotate-BR {
+    0% {
+        transform: rotate(-0.5deg);
+    }
+
+    35% {
+        transform: rotate(23deg);
+    }
+
+    50% {
+        transform: rotate(21.5deg);
+    }
+
+    85% {
+        transform: rotate(45.5deg);
+    }
+
+    100% {
+        transform: rotate(44.5deg);
+    }
+}
+
+.div-cog-TL {
+    position: fixed;
+    top: -70rem;
+    left: -70rem;
+    z-index: -100;
+    width: 150rem;
+}
+
+.img-cog-TL {
+    position: relative;
+    width: 100%;
+    opacity: 0.05;
+    animation: rotate-TL 90s linear infinite;
+}
+
+@keyframes rotate-TL {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

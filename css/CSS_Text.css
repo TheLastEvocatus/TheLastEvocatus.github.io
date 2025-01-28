@@ -1,0 +1,52 @@
+﻿html {
+    background-color: rgb(245, 245, 245);
+    scrollbar-width: thin;
+    scrollbar-color: crimson black;
+}
+
+p {
+    font-family: 'Baskerville Classico', 'Times New Roman';
+    font-size: 24px;
+    color: black;
+    font-weight: normal;
+    margin-top: 0.5rem;
+    margin-bottom: -0.5rem;
+}
+
+h1, h2, h3 {
+    font-family: 'Labor Union', 'Times New Roman';
+    font-size: 36px;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    color: black;
+    text-align: center;
+}
+
+.page-header {
+    background-image: url("/Images/paper_1.png");
+    height: 100vh;
+}
+
+.Text-Position {
+    position: relative;
+    border-left: 20rem;
+    padding-right: 3rem;
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+}
+
+.text-footer {
+    font-family: 'Labor Union', 'Baskerville Classico', 'Times New Roman' !important;
+    color: crimson !important;
+    text-align: center;
+    font-size: 100%;
+    word-spacing: 0.1rem;
+}
+
+fbt {
+    font-size: 135%;
+}
+
+.fmt {
+    font-size: 90%
+}

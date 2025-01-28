@@ -1,0 +1,47 @@
+﻿.social-links-table, td, th {
+    border: 0rem solid black;
+    z-index: 0;
+}
+
+.table-line {
+    height: 0.5rem;
+    background-color: crimson;
+}
+
+.td-link {
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+    .td-link:hover {
+        background-color: crimson;
+    }
+
+.icon {
+    display: block;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+    max-width: 60rem;
+}
+
+.div-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-priority {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    min-width: 3rem;
+    height: 100%;
+    max-width: 256px;
+}
+
+.image {
+    max-width: 128px !important;
+}
