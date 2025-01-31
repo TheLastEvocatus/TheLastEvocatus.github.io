@@ -35,6 +35,76 @@
     margin-bottom: 10rem;
 }
 
+.div-text-information {
+    background-color: rgb(255, 255, 255, 0.6);
+    border-width: 0.8rem 0 0.8rem 0;
+    border-color: crimson;
+    border-style: solid;
+    position: relative;
+    max-width: 50rem;
+    max-height: 75rem;
+    margin: 9rem 5rem 5rem 5rem;
+    padding: 1rem 2rem 1rem 2rem;
+}
+
+.text-information {
+    font-family: Alice, 'Times New Roman';
+    font-size: 24px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    line-height: 2.5rem;
+    color: black;
+    text-align: justify;
+    text-indent: 2rem;
+}
+
+.text-VGA {
+    font-family: VGA !important;
+    text-decoration: line-through
+}
+
+.in-text-line {
+    height: 3px;
+    background-color: crimson;
+}
+
+.centered-text {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 2rem;
+}
+
+.additional-text {
+    font-size: 50%;
+    margin: 0;
+    text-align: right !important;
+    color: crimson;
+}
+
+i {
+    font-size: 60%;
+}
+
+a {
+    color: crimson;
+    text-decoration: none;
+}
+
+    a:hover {
+        background-color: crimson;
+        color: black
+    }
+
+@font-face {
+    font-family: Alice;
+    src: url(../fonts/Alice-Regular.ttf);
+}
+
+@font-face {
+    font-family: VGA;
+    src: url(../fonts/MorePerfectDOSVGA.ttf);
+}
+
 @media only screen and (max-width: 1200px) {
     .icon {
         margin-top: 1.7rem !important;
@@ -103,5 +173,9 @@
         top: -40rem !important;
         left: -40rem !important;
         width: 110rem !important;
+    }
+
+    .div-text-information {
+        margin: 10rem 5rem 5rem 5rem;
     }
 }

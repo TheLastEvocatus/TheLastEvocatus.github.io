@@ -7,7 +7,7 @@
 }
 
 p {
-    font-family: 'Baskerville Classico', 'Times New Roman';
+    font-family: "Labor Union", 'Times New Roman';
     font-size: 24px;
     color: black;
     font-weight: normal;
@@ -16,7 +16,7 @@ p {
 }
 
 h1, h2, h3 {
-    font-family: LaborUnion, 'Times New Roman';
+    font-family: LaborUnion, "Labor Union", 'Times New Roman';
     font-size: 36px;
     margin-top: 0.2rem;
     margin-bottom: 0.2rem;
@@ -38,7 +38,7 @@ h1, h2, h3 {
 }
 
 .text-footer {
-    font-family: LaborUnion, 'Baskerville Classico', 'Times New Roman' !important;
+    font-family: LaborUnion, "Labor Union", 'Times New Roman' !important;
     color: crimson !important;
     text-align: center;
     font-size: 100%;
@@ -55,5 +55,5 @@ fbt {
 
 @font-face {
     font-family: LaborUnion;
-    src: url(../fonts/laborunion.otf);
+    src: url(../fonts/LaborUnion-Regular.otf);
 }
