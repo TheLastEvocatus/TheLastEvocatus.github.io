@@ -1,0 +1,24 @@
+﻿@media only screen and (max-width: 1200px) {
+    .logo-text {
+        font-family: LaborUnion !important;
+        font-size: 0px !important;
+        color: white !important;
+    }
+
+    .navigation-text {
+        padding-top: 8px !important;
+        padding-bottom: 8px !important;
+        font-size: 36px !important;
+    }
+
+    .gallery-wrapper {
+        grid-template: 300px/ 300px 300px !important;
+        gap: 2vw !important;
+    }
+
+    .image-gallery {
+        height: 300px !important;
+        width: 300px !important;
+        opacity: 0.9 !important;
+    }
+}

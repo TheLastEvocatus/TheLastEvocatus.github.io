@@ -1,0 +1,108 @@
+﻿p {
+    font-family: Alice;
+    font-size: 30px;
+    color: black;
+    text-decoration: none;
+    text-align: justify;
+    text-indent: 2rem;
+}
+
+.line {
+    width: 100%;
+    color: crimson;
+    background-color: crimson;
+    height: 5px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.margin-b {
+    margin-bottom: 8px;
+    height: 10px !important;
+}
+
+.margin-t {
+    margin-top: 8px;
+    height: 10px !important;
+}
+
+.line-small {
+    height: 5px
+}
+
+.line-wide {
+    height: 10px
+}
+
+.social-links-text {
+    display: flex;
+    font-family: LaborUnion;
+    font-size: 48px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 auto;
+    justify-content: center;
+    padding-bottom: 10px
+}
+
+.information-grid {
+    display: inline-grid;
+    grid-template: auto/ auto auto;
+    gap: 10vw;
+}
+
+.social-links-wrapper-wrapper {
+    padding-top: 300px;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 auto;
+    transition: padding 140ms ease-in-out;
+    position: relative;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-links-wrapper {
+    margin: 0 auto;
+    transition: padding 140ms ease-in-out;
+    position: relative;
+    display: inline-grid;
+    grid-template: 220px/ 220px 220px;
+    gap: 0.5vw;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-links-padding-wrapper {
+    padding-top: 44px;
+}
+
+.social-link-img {
+    width: 200px;
+    height: 200px;
+}
+
+.social-link-div {
+    background-color: black;
+    padding: 10px;
+}
+
+    .social-link-div:hover {
+        background-color: crimson !important;
+    }
+
+.information-text-wrapper {
+    padding-top: 0px;
+    max-width: 800px;
+}
+
+.information-text-header {
+    margin-bottom: 16px;
+    font-size: 34px !important;
+    text-align: center !important;
+    text-indent: 0rem !important;
+}
