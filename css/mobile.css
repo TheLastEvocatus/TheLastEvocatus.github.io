@@ -78,6 +78,38 @@
 
 @media only screen and (max-width: 950px) {
     .image-wrapper {
+        height: 600px !important;
+        width: 600px !important;
+    }
+
+    .gallery-wrapper {
+        grid-template: 600px/ 600px !important;
+        gap: 4vw !important;
+    }
+
+    footer {
+        margin-top: 60px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .image-wrapper {
+        height: 500px !important;
+        width: 500px !important;
+    }
+
+    .gallery-wrapper {
+        grid-template: 500px/ 500px !important;
+        gap: 4vw !important;
+    }
+
+    footer {
+        margin-top: 60px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .image-wrapper {
         height: 400px !important;
         width: 400px !important;
     }
@@ -85,5 +117,9 @@
     .gallery-wrapper {
         grid-template: 400px/ 400px !important;
         gap: 4vw !important;
+    }
+
+    footer {
+        margin-top: 60px;
     }
 }
