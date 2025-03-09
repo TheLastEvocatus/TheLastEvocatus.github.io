@@ -30,9 +30,13 @@
         grid-template: auto/auto !important;
     }
 
-    .information-text {
+    .information-text-wrapper {
+        padding-left:100px;
+        padding-right:100px;
     }
 
-    .social-links {
+    .social-links-padding-wrapper {
+        padding-left:100px;
+        padding-right:100px;
     }
 }
