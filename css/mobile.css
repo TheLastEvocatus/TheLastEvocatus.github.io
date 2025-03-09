@@ -23,7 +23,7 @@
     }
 
     .image-wrapper {
-        border-radius: 0% !important;
+        border-radius: 5% !important;
     }
 
     .information-grid {
@@ -68,10 +68,14 @@
     }
 
     .gallery-wrapper {
-        padding: 4vw 12vw 4vw 12vw !important;
+        padding: 0 !important;
     }
 
     .navigation-text {
         font-size: 36px !important;
+    }
+
+    .header-wrapper {
+        padding: 1.5vw 5vw 1.5vw 5vw !important;
     }
 }
