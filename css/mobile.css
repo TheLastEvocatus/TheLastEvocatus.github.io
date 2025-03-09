@@ -12,13 +12,27 @@
     }
 
     .gallery-wrapper {
-        grid-template: 300px/ 300px 300px !important;
+        grid-template: 400px/ 400px 400px !important;
         gap: 2vw !important;
     }
 
     .image-gallery {
-        height: 300px !important;
-        width: 300px !important;
-        opacity: 0.9 !important;
+        height: 400px !important;
+        width: 400px !important;
+        opacity: 1 !important;
+    }
+
+    .image-wrapper {
+        border-radius: 0% !important;
+    }
+
+    .information-grid {
+        grid-template: auto/auto !important;
+    }
+
+    .information-text {
+    }
+
+    .social-links {
     }
 }
