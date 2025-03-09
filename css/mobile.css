@@ -80,7 +80,7 @@
     }
 
     .gallery-wrapper-wrapper {
-        padding-top: 200px;
+        padding-top: 175px !important;
         padding-left: 5vw !important;
         padding-right: 5vw !important;
     }
