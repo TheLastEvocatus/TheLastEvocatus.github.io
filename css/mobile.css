@@ -1,4 +1,4 @@
-﻿@media only screen and (max-width: 1200px) {
+﻿@media only screen and (max-width: 1300px) {
     .logo-text {
         font-family: LaborUnion !important;
         font-size: 0px !important;
@@ -14,16 +14,6 @@
     .gallery-wrapper {
         grid-template: 400px/ 400px 400px !important;
         gap: 4vw !important;
-    }
-
-    .image-gallery {
-        height: 400px !important;
-        width: 400px !important;
-        opacity: 1 !important;
-    }
-
-    .image-wrapper {
-        border-radius: 5% !important;
     }
 
     .information-grid {
@@ -83,5 +73,29 @@
         padding-top: 175px !important;
         padding-left: 5vw !important;
         padding-right: 5vw !important;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .image-wrapper {
+        height: 350px !important;
+        width: 350px !important;
+    }
+
+    .gallery-wrapper {
+        grid-template: 350px/ 350px 350px !important;
+        gap: 3vw !important;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .image-wrapper {
+        height: 400px !important;
+        width: 400px !important;
+    }
+
+    .gallery-wrapper {
+        grid-template: 400px/ 400px !important;
+        gap: 4vw !important;
     }
 }
