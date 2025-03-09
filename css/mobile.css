@@ -13,7 +13,7 @@
 
     .gallery-wrapper {
         grid-template: 400px/ 400px 400px !important;
-        gap: 2vw !important;
+        gap: 4vw !important;
     }
 
     .image-gallery {
