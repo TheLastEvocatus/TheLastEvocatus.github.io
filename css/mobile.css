@@ -44,11 +44,11 @@
     }
 
     .s-l-padding-wrapper {
-        padding-bottom: 100px;
+        padding-bottom: 150px;
     }
 
     .s-l-wrapper-wrapper {
-        padding-top: 100px
+        padding-top: 50px
     }
 
     .icon-navigation-wrapper {
@@ -68,6 +68,10 @@
     }
 
     .gallery-wrapper {
-        padding: 1vw 5vw 1vw 5vw !important;
+        padding: 2vw 8vw 2vw 8vw !important;
+    }
+
+    .navigation-text {
+        font-size: 30px !important;
     }
 }
