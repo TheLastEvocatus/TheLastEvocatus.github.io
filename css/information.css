@@ -34,7 +34,7 @@
     height: 10px
 }
 
-.social-links-text {
+.s-l-text {
     display: flex;
     font-family: LaborUnion;
     font-size: 48px;
@@ -59,7 +59,7 @@
     justify-content: center;
 }
 
-.social-links-wrapper-wrapper {
+.s-l-wrapper-wrapper {
     padding-top: 300px;
     padding-left: 0;
     padding-right: 0;
@@ -92,7 +92,7 @@
     justify-content: center;
 }
 
-.social-links-padding-wrapper {
+.s-l-padding-wrapper {
     margin:0 auto;
     padding-top: 44px;
 }

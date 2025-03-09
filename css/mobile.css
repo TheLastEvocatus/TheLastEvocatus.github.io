@@ -31,15 +31,43 @@
     }
 
     .information-text-wrapper {
-        padding-left:150px;
-        padding-right:150px;
+        padding-left: 150px;
+        padding-right: 150px;
     }
 
     .social-links-padding-wrapper {
-        padding-left:150px;
-        padding-right:150px;
+        padding-left: 150px;
+        padding-right: 150px;
     }
 
-    .social-link-img {
+    .information-text-wrapper {
+    }
+
+    .s-l-padding-wrapper {
+        padding-bottom: 100px;
+    }
+
+    .s-l-wrapper-wrapper {
+        padding-top: 100px
+    }
+
+    .icon-navigation-wrapper {
+        display: inline-flex;
+        flex-wrap: wrap;
+        padding-left: 0vw !important;
+    }
+
+    .icon-div {
+        padding-left: 0vw !important;
+    }
+
+    .icon-navigation {
+        width: 0px !important;
+        height: 0px !important;
+        padding: 0px !important;
+    }
+
+    .gallery-wrapper {
+        padding: 1vw 5vw 1vw 5vw !important;
     }
 }
