@@ -52,7 +52,7 @@
 .information-grid {
     display: inline-grid;
     grid-template: auto/ auto auto;
-    gap: 10vw;
+    gap: 14vw;
     align-content: center;
     align-items: center;
     justify-content: center;
@@ -102,7 +102,6 @@
 }
 
 .social-link-div {
-    background-color: white;
     padding: 10px;
 }
 
