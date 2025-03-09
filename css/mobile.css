@@ -48,7 +48,7 @@
     }
 
     .s-l-wrapper-wrapper {
-        padding-top: 50px
+        padding-top: 50px !important;
     }
 
     .icon-navigation-wrapper {
@@ -68,10 +68,10 @@
     }
 
     .gallery-wrapper {
-        padding: 2vw 8vw 2vw 8vw !important;
+        padding: 3vw 10vw 3vw 10vw !important;
     }
 
     .navigation-text {
-        font-size: 30px !important;
+        font-size: 36px !important;
     }
 }
