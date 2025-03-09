@@ -26,13 +26,13 @@
 .image-gallery {
     position: relative;
     height: 400px;
-    opacity: 0.85;
+    opacity: 1;
     background: transparent no-repeat center;
     background-size: cover;
 }
 
     .image-gallery:hover {
-        opacity: 1;
+        opacity: 0.8;
         cursor: pointer;
     }
 
