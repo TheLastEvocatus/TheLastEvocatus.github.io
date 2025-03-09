@@ -76,19 +76,7 @@
     }
 }
 
-@media only screen and (max-width: 1000px) {
-    .image-wrapper {
-        height: 350px !important;
-        width: 350px !important;
-    }
-
-    .gallery-wrapper {
-        grid-template: 350px/ 350px 350px !important;
-        gap: 3vw !important;
-    }
-}
-
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 950px) {
     .image-wrapper {
         height: 400px !important;
         width: 400px !important;
