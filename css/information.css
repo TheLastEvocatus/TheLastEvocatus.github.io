@@ -54,6 +54,9 @@
     display: inline-grid;
     grid-template: auto/ auto auto;
     gap: 10vw;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .social-links-wrapper-wrapper {
@@ -69,7 +72,7 @@
     justify-content: center;
 }
 
-.social-links-wrapper {
+.s-l-wrapper {
     min-width: 400px;
     margin: 0 auto;
     transition: padding 140ms ease-in-out;
@@ -82,7 +85,15 @@
     justify-content: center;
 }
 
+.s-l-centerer {
+    display:flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
 .social-links-padding-wrapper {
+    margin:0 auto;
     padding-top: 44px;
 }
 
@@ -103,6 +114,7 @@
 .information-text-wrapper {
     padding-top: 0px;
     max-width: 800px;
+
 }
 
 .information-text-header {
