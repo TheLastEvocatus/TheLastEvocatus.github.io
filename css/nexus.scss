@@ -1,0 +1,33 @@
+﻿html {
+    background-color: rgb(255, 255, 255);
+    scrollbar-width: thin;
+    scrollbar-color: transparent;
+    scroll-behavior: smooth;
+    overflow: hidden;
+    transition: padding 100ms ease-in-out;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+    position: relative;
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+}
+
+$main_colour: crimson;
+$secondary_colour: white;
+
+@import "./animation";
+
+@import "./navigation";
+
+@import "./information";
+
+@import "./mobile";

@@ -1,0 +1,30 @@
+$distance: 1.9rem;
+$width: 0.75rem;
+$margin: 1.5rem;
+
+.decoration {
+    position: absolute;
+    width: $width;
+    background-color: black;
+    height: 7.5rem;
+    z-index: 1000;
+}
+
+.dec-left_1 {
+    left: $distance;
+
+}
+
+.dec-left_2 {
+    left: $distance - $margin;
+    width: $width + 0.5rem;
+}
+
+.dec-right_1 {
+    right: $distance;
+}
+
+.dec-right_2 {
+    right: $distance - $margin;
+    width: $width + 0.5rem;
+}
