@@ -346,9 +346,6 @@ sm-grid_2 {
     max-width: 150px;
     max-height: 150px;
   }
-  .text-area {
-    font-size: 18px;
-  }
 }
 @media only screen and (max-width: 950px) {
   .image-wrapper {
@@ -374,6 +371,9 @@ sm-grid_2 {
   }
   .navigation-buttons-wrapper {
     margin-right: 0 !important;
+  }
+  .text-area {
+    font-size: 16px;
   }
 }
 @media only screen and (max-width: 750px) {
