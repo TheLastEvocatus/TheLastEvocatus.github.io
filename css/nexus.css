@@ -1,8 +1,10 @@
 html {
   background-color: rgb(255, 255, 255);
   scroll-behavior: smooth;
-  overflow: hidden;
+  overflow: scroll;
   transition: padding 100ms ease-in-out;
+  scrollbar-color: crimson;
+  scrollbar-width: thin;
 }
 
 body {
@@ -339,7 +341,7 @@ sm-grid_2 {
     max-height: 100px;
   }
   .text-area {
-    font-size: 21px;
+    font-size: 20px;
   }
 }
 @media only screen and (max-width: 950px) {
