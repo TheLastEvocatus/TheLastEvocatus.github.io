@@ -20,15 +20,15 @@ body .wrapper {
 
 @font-face {
   font-family: "Norwester";
-  src: url(./fonts/norwester/norwester.otf);
+  src: url(../fonts/norwester/norwester.otf);
 }
 @font-face {
   font-family: "Railway";
-  src: url(./fonts/railway/railway.otf);
+  src: url(../fonts/railway/railway.otf);
 }
 @font-face {
   font-family: "SourceHanSerifCN";
-  src: url(./fonts/hanserif/SourceHanSerifCN-Regular);
+  src: url(../fonts/hanserif/SourceHanSerifCN-Regular.ttf);
 }
 .div-gear {
   position: fixed;
@@ -151,7 +151,7 @@ nav {
 .nav-left .motto {
   margin: auto;
   margin-bottom: 0.5rem;
-  font-family: "railway";
+  font-family: Railway;
   font-size: 11.5px;
   text-align: center;
 }
@@ -160,7 +160,7 @@ nav {
   position: relative;
   display: flex;
   align-items: center;
-  font-family: "Norwester";
+  font-family: Norwester;
   font-size: 36px;
   color: white;
 }
@@ -192,7 +192,7 @@ nav {
 grid {
   display: grid;
   grid-template-areas: "a a" "b c";
-  max-width: 45rem;
+  max-width: 70rem;
   width: 100%;
   padding: 0.25rem;
   gap: 1rem;
@@ -227,7 +227,7 @@ element {
 
 .text-area {
   grid-area: b;
-  font-family: "SourceHanSerifCN";
+  font-family: SourceHanSerifCN;
   font-size: 24px;
   text-align: justify;
   text-indent: 2rem;
@@ -310,6 +310,7 @@ sm-grid_2 {
 .PS {
   font-size: 50%;
   margin: 0;
+  margin-bottom: 25px;
 }
 
 @media only screen and (max-width: 1300px) {

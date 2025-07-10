@@ -3,7 +3,7 @@
     grid-template-areas:
         "a a"
         "b c";
-    max-width: 45rem;
+    max-width: 70rem;
     width: 100%;
     padding: 0.25rem;
     gap: 1rem;
@@ -30,7 +30,7 @@ element {
 
 .heading-area {
     grid-area: a;
-    font-family: "Norwester";
+    font-family: 'Norwester';
     padding: 24px 0 24px 0;
     font-size: 60px;
     color: black;
@@ -38,7 +38,7 @@ element {
 
 .text-area {
     grid-area: b;
-    font-family: "SourceHanSerifCN";
+    font-family: SourceHanSerifCN;
     font-size: 24px;
     text-align: justify;
     text-indent: 2rem;
@@ -126,4 +126,5 @@ sm-grid_2 {
 .PS {
     font-size: 50%;
     margin: 0;
+    margin-bottom: 25px;
 }
