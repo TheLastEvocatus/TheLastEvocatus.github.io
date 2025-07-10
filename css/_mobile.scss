@@ -22,6 +22,17 @@
         padding-left: 5vw !important;
         padding-right: 5vw !important;
     }
+
+    .social-media {
+        min-width: 50px;
+        min-height: 50px;
+        max-width: 100px;
+        max-height: 100px;
+    }
+
+    .text-area {
+        font-size: 21px;
+    }
 }
 
 @media only screen and (max-width: 950px) {
@@ -33,6 +44,27 @@
     .gallery-wrapper {
         grid-template: 600px/ 600px !important;
         gap: 4vw !important;
+    }
+
+    .title {
+        font-size: 0px !important;
+    }
+
+    .motto {
+        font-size: 0px !important;
+    }
+
+    .nav-left {
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-right {
+        margin-right: auto;
+    }
+
+    .navigation-buttons-wrapper {
+        margin-right: 0 !important;
     }
 }
 
