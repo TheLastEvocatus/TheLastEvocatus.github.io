@@ -3,8 +3,9 @@
     scroll-behavior: smooth;
     overflow: scroll;
     transition: padding 100ms ease-in-out;
-    scrollbar-color: crimson;
     scrollbar-width: thin;
+    scrollbar-color: crimson black;
+    scroll-behavior: smooth;
 }
 
 body {

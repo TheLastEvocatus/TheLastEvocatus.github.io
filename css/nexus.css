@@ -3,8 +3,9 @@ html {
   scroll-behavior: smooth;
   overflow: scroll;
   transition: padding 100ms ease-in-out;
-  scrollbar-color: crimson;
   scrollbar-width: thin;
+  scrollbar-color: crimson black;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -14,7 +15,6 @@ body {
   height: 100%;
   position: relative;
 }
-
 body .wrapper {
   display: flex;
   flex-direction: column;
@@ -27,21 +27,18 @@ body .wrapper {
   font-style: normal;
   font-weight: normal;
 }
-
 @font-face {
   font-family: "Railway";
-  src: url(../fonts/railway/Railway.otf);
+  src: url(../fonts/railway/railway.otf);
   font-style: normal;
   font-weight: normal;
 }
-
 @font-face {
   font-family: "SourceHanSerifCN";
   src: url(../fonts/hanserif/SourceHanSerifCN-Regular.ttf);
   font-style: normal;
   font-weight: normal;
 }
-
 .div-gear {
   position: fixed;
   top: -110rem;
@@ -61,12 +58,10 @@ body .wrapper {
   0% {
     transform: rotate(0deg);
   }
-
   100% {
     transform: rotate(360deg);
   }
 }
-
 .noise:before {
   animation: grain 8s steps(10) infinite;
   background-image: url(../images/grain.png);
@@ -79,55 +74,42 @@ body .wrapper {
   width: 300%;
   z-index: -5;
 }
-
 .noise.no-scroll {
   overflow-y: hidden;
 }
 
 @keyframes grain {
-
-  0%,
-  100% {
+  0%, 100% {
     transform: translate(0, 0);
   }
-
   10% {
     transform: translate(-5%, -10%);
   }
-
   20% {
     transform: translate(-15%, 5%);
   }
-
   30% {
     transform: translate(7%, -25%);
   }
-
   40% {
     transform: translate(-5%, 25%);
   }
-
   50% {
     transform: translate(-15%, 10%);
   }
-
   60% {
     transform: translate(15%, 0%);
   }
-
   70% {
     transform: translate(0%, 15%);
   }
-
   80% {
     transform: translate(3%, 35%);
   }
-
   90% {
     transform: translate(-10%, 10%);
   }
 }
-
 .decoration {
   position: absolute;
   width: 0.75rem;
@@ -171,12 +153,10 @@ nav {
   margin-right: auto;
   padding-left: 5rem;
 }
-
 .nav-left .title {
   margin: auto;
   text-align: center;
 }
-
 .nav-left .motto {
   margin: auto;
   margin-bottom: 0.5rem;
@@ -193,26 +173,22 @@ nav {
   font-size: 36px;
   color: white;
 }
-
 .navigation-wrapper .logo {
   display: block;
   max-width: 5rem;
   width: 100%;
   padding-right: 1rem;
 }
-
 .navigation-wrapper .navigation-buttons-wrapper {
   display: flex;
   display: inline-flex;
   margin-right: 2.65rem;
 }
-
 .navigation-wrapper .navigation-buttons-wrapper a {
   color: inherit;
   text-decoration: none;
   padding: 0 6rem 0 6rem;
 }
-
 .navigation-wrapper .navigation-buttons-wrapper a:hover {
   background-color: white;
   color: crimson;
@@ -302,7 +278,6 @@ sm-grid_1 {
 .smg-a {
   grid-area: a;
 }
-
 .smg-a :hover {
   background-color: crimson;
 }
@@ -310,7 +285,6 @@ sm-grid_1 {
 .smg-b {
   grid-area: b;
 }
-
 .smg-b :hover {
   background-color: crimson;
 }
@@ -318,7 +292,6 @@ sm-grid_1 {
 .smg-c {
   grid-area: c;
 }
-
 .smg-c :hover {
   background-color: crimson;
 }
@@ -353,102 +326,81 @@ sm-grid_2 {
   .navigation-wrapper .navigation-buttons-wrapper a {
     padding: 0 8vw 0 8vw;
   }
-
   .logo {
     max-width: 0 !important;
   }
-
   .gallery-wrapper {
     grid-template: 400px/400px 400px !important;
     gap: 4vw !important;
   }
-
   .gallery-wrapper {
     padding: 0 !important;
   }
-
   .gallery-wrapper-wrapper {
     padding-top: 175px !important;
     padding-left: 5vw !important;
     padding-right: 5vw !important;
   }
-
   .social-media {
     min-width: 50px;
     min-height: 50px;
     max-width: 125px;
     max-height: 125px;
   }
-
   sm-grid_2 {
     grid-template-areas: "a" "b" "c" !important;
   }
-
   .social-media {
     padding-left: 5rem !important;
     padding-right: 5rem !important;
   }
-
   .text-area {
     font-size: 16px !important;
   }
 }
-
 @media only screen and (max-width: 950px) {
   .image-wrapper {
     height: 600px !important;
     width: 600px !important;
   }
-
   .gallery-wrapper {
     grid-template: 600px/600px !important;
     gap: 4vw !important;
   }
-
   .title {
     font-size: 0px !important;
   }
-
   .motto {
     font-size: 0px !important;
   }
-
   .nav-left {
     margin: 0;
     padding: 0;
   }
-
   .nav-right {
     margin-right: auto;
   }
-
   .navigation-buttons-wrapper {
     margin-right: 0 !important;
   }
 }
-
 @media only screen and (max-width: 750px) {
   .image-wrapper {
     height: 500px !important;
     width: 500px !important;
   }
-
   .gallery-wrapper {
     grid-template: 500px/500px !important;
     gap: 4vw !important;
   }
 }
-
 @media only screen and (max-width: 600px) {
   .image-wrapper {
     height: 400px !important;
     width: 400px !important;
   }
-
   .gallery-wrapper {
     grid-template: 400px/400px !important;
     gap: 4vw !important;
   }
-}
-
-/*# sourceMappingURL=nexus.css.map */
+}/*# sourceMappingURL=nexus.css.map */
