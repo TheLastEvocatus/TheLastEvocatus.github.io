@@ -371,6 +371,9 @@ sm-grid_2 div a {
   }
 }
 @media only screen and (max-width: 950px) {
+  .navigation-wrapper .navigation-buttons-wrapper a {
+    padding: 0 12vw 0 12vw;
+  }
   .title {
     font-size: 0px !important;
   }

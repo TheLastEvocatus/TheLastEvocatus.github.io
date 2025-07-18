@@ -371,6 +371,9 @@ sm-grid_2 div a {
   }
 }
 @media only screen and (max-width: 950px) {
+  .navigation-wrapper .navigation-buttons-wrapper a {
+    padding: 0 12vw 0 12vw;
+  }
   .title {
     font-size: 0px !important;
   }
@@ -582,6 +585,9 @@ footer {
   }
 }
 @media only screen and (max-width: 950px) {
+  .navigation-wrapper .navigation-buttons-wrapper a {
+    padding: 0 12vw 0 12vw;
+  }
   .title {
     font-size: 0px !important;
   }
@@ -629,12 +635,12 @@ gallery grid-gallery {
   gap: 2rem;
   justify-content: center;
   grid-auto-columns: 200px;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   background: rgb(255, 255, 255);
   border-width: 3px 0 3px 0;
   border-color: crimson;
   border-style: solid;
-  border-radius: 1rem;
+  border-radius: 0.75rem;
   box-sizing: border-box;
 }
 gallery grid-gallery a {

@@ -25,12 +25,12 @@ gallery {
         gap: 2rem;
         justify-content: center;
         grid-auto-columns: 200px;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
         background: rgb(255, 255, 255);
         border-width: 3px 0 3px 0;
         border-color: $main_colour;
         border-style: solid;
-        border-radius: 1rem;
+        border-radius: 0.75rem;
         box-sizing: border-box;
 
         a {
@@ -44,7 +44,6 @@ gallery {
             }
 
             :hover {
-
                 opacity: 0.5;
                 cursor: pointer;
             }
