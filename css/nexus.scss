@@ -22,6 +22,8 @@ body {
 }
 
 $transition: 200ms ease-in-out;
+$main_colour: crimson;
+$secondary_colour: white;
 
 @font-face {
     font-family: 'Norwester';
@@ -43,9 +45,6 @@ $transition: 200ms ease-in-out;
     font-style: normal;
     font-weight: normal;
 }
-
-$main_colour: crimson;
-$secondary_colour: white;
 
 @import "./animation";
 

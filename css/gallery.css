@@ -1,50 +1,660 @@
-﻿.gallery-wrapper-wrapper {
-    position: relative;
-    display: flex;
-    max-width: 1600px;
-    padding-top: 150px;
-    padding-left: 0;
-    padding-right: 0;
-    margin: 0 auto;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    overflow: auto;
+html {
+  background-color: rgb(255, 255, 255);
+  scroll-behavior: smooth;
+  overflow: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: crimson black;
+  scroll-behavior: smooth;
 }
 
-.gallery-wrapper {
-    width: 100%;
-    transition: padding 140ms ease-in-out;
-    position: relative;
-    display: inline-grid;
-    grid-template: 400px/ 400px 400px 400px;
-    gap: 2vw;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    overflow: auto;
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100%;
+  position: relative;
+}
+body .wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-
-.image-gallery {
-    position: relative;
-    height: inherit;
-    width: inherit;
-    opacity: 1;
-    background: transparent no-repeat center;
-    background-size: cover;
+@font-face {
+  font-family: "Norwester";
+  src: url(../fonts/norwester/norwester.otf);
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Railway";
+  src: url(../fonts/railway/Railway.otf);
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "SourceHanSerifCN";
+  src: url(../fonts/hanserif/SourceHanSerifCN-Regular.ttf);
+  font-style: normal;
+  font-weight: normal;
+}
+.div-gear {
+  position: fixed;
+  top: -110rem;
+  left: -75rem;
+  z-index: -100;
+  width: 3500px;
 }
 
-.image-gallery:hover {
-    opacity: 0.8;
-    cursor: pointer;
+.img-gear {
+  position: relative;
+  width: 100%;
+  opacity: 0.02;
+  animation: rotate-TL 90s linear infinite;
 }
 
-.image-wrapper {
-    height: 400px;
-    width: 400px;
-    overflow: hidden;
-    position: relative;
-    text-align: center;
-    border-radius: 5%;
+@keyframes rotate-TL {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
+.noise:before {
+  animation: grain 8s steps(10) infinite;
+  background-image: url(../images/grain.png);
+  content: "";
+  height: 300%;
+  left: -50%;
+  opacity: 0.5;
+  position: fixed;
+  top: -110%;
+  width: 300%;
+  z-index: -5;
+}
+.noise.no-scroll {
+  overflow-y: hidden;
+}
+
+@keyframes grain {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(-5%, -10%);
+  }
+  20% {
+    transform: translate(-15%, 5%);
+  }
+  30% {
+    transform: translate(7%, -25%);
+  }
+  40% {
+    transform: translate(-5%, 25%);
+  }
+  50% {
+    transform: translate(-15%, 10%);
+  }
+  60% {
+    transform: translate(15%, 0%);
+  }
+  70% {
+    transform: translate(0%, 15%);
+  }
+  80% {
+    transform: translate(3%, 35%);
+  }
+  90% {
+    transform: translate(-10%, 10%);
+  }
+}
+.decoration {
+  position: absolute;
+  width: 0.75rem;
+  background-color: black;
+  height: 7.5rem;
+  z-index: 1000;
+}
+
+.dec-left_1 {
+  left: 1.9rem;
+}
+
+.dec-left_2 {
+  left: 0.4rem;
+  width: 1.25rem;
+}
+
+.dec-right_1 {
+  right: 1.9rem;
+}
+
+.dec-right_2 {
+  right: 0.4rem;
+  width: 1.25rem;
+}
+
+nav {
+  position: relative;
+  width: 100%;
+  z-index: 100;
+  background-color: crimson;
+  display: flex;
+  align-items: center;
+  transition: 500ms ease-in-out;
+}
+
+.nav-right {
+  margin-left: auto;
+}
+
+.nav-left {
+  margin-right: auto;
+  padding-left: 5rem;
+}
+.nav-left .title {
+  margin: auto;
+  text-align: center;
+}
+.nav-left .motto {
+  margin: auto;
+  margin-bottom: 0.5rem;
+  font-family: "Railway";
+  font-size: 11.5px;
+  text-align: center;
+}
+
+.navigation-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-family: "Norwester";
+  font-size: 36px;
+  color: white;
+}
+.navigation-wrapper .logo {
+  display: block;
+  max-width: 5rem;
+  width: 100%;
+  padding-right: 1rem;
+}
+.navigation-wrapper .navigation-buttons-wrapper {
+  display: flex;
+  display: inline-flex;
+  margin-right: 2.65rem;
+}
+.navigation-wrapper .navigation-buttons-wrapper a {
+  color: inherit;
+  text-decoration: none;
+  padding: 0 6rem 0 6rem;
+}
+.navigation-wrapper .navigation-buttons-wrapper a:hover {
+  background-color: white;
+  color: crimson;
+}
+
+.text-underline {
+  text-decoration: underline !important;
+}
+
+footer {
+  margin-top: 2rem;
+  padding-top: 3rem;
+  position: relative;
+  width: 100%;
+  z-index: 100;
+  background-color: crimson;
+  display: flex;
+  align-items: center;
+}
+
+grid {
+  position: relative;
+  display: grid;
+  grid-template-areas: "a a" "b c";
+  max-width: 70rem;
+  width: 100%;
+  padding: 3rem 3rem 15rem 3rem;
+  gap: 1rem;
+  justify-content: stretch;
+  align-items: stretch;
+  background: rgba(255, 0, 0, 0);
+  box-sizing: border-box;
+  margin: auto;
+  border-radius: 1rem;
+  transition: 200ms ease-in-out;
+}
+
+element {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  background: rgb(255, 255, 255);
+  border-width: 3px 0 3px 0;
+  border-color: crimson;
+  border-style: solid;
+  border-radius: 0.75rem;
+  transition: 200ms ease-in-out;
+}
+
+.heading-area {
+  grid-area: a;
+  font-family: "Norwester";
+  padding: 24px 0 24px 0;
+  font-size: 60px;
+  color: black;
+}
+
+.text-area {
+  grid-area: b;
+  font-family: "SourceHanSerifCN";
+  font-size: 20px;
+  text-align: justify;
+  text-indent: 2rem;
+  color: black;
+  box-sizing: border-box;
+  padding: 0 1rem 0 1rem;
+}
+
+.social-area {
+  box-sizing: border-box;
+}
+
+hr {
+  height: 2px;
+  background: linear-gradient(to right, rgba(220, 20, 60, 0), crimson, rgba(220, 20, 60, 0));
+  width: 90%;
+  border: none;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+sm-grid_1 {
+  display: grid;
+  grid-template-areas: "a" "b";
+  width: 100%;
+  padding: 1rem;
+  gap: 0.5rem;
+  justify-content: stretch;
+  align-items: stretch;
+  box-sizing: border-box;
+  border-radius: 1rem;
+  transition: 200ms ease-in-out;
+}
+sm-grid_1 div a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-width: 2px 0 2px 0;
+  border-color: crimson;
+  border-style: solid;
+  border-radius: 0.75rem;
+}
+
+sm-grid_2 {
+  display: grid;
+  grid-template-areas: "a b" "c d";
+  width: 100%;
+  padding: 1rem;
+  gap: 0.5rem;
+  justify-content: stretch;
+  align-items: stretch;
+  box-sizing: border-box;
+  border-radius: 1rem;
+  transition: 200ms ease-in-out;
+}
+sm-grid_2 div a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-width: 2px 0 2px 0;
+  border-color: crimson;
+  border-style: solid;
+  border-radius: 0.75rem;
+}
+
+.smg-a {
+  grid-area: a;
+}
+.smg-a :hover {
+  background-color: crimson;
+  border-color: black;
+  border-radius: 0.75rem;
+}
+
+.smg-b {
+  grid-area: b;
+}
+.smg-b :hover {
+  background-color: crimson;
+  border-color: black;
+  border-radius: 0.75rem;
+}
+
+.smg-c {
+  grid-area: c;
+}
+.smg-c :hover {
+  background-color: crimson;
+  border-color: black;
+  border-radius: 0.75rem;
+}
+
+.smg-d {
+  grid-area: d;
+}
+.smg-d :hover {
+  background-color: crimson;
+  border-color: black;
+  border-radius: 0.75rem;
+}
+
+.social-media {
+  min-width: 100px;
+  min-height: 100px;
+  max-width: 150px;
+  max-height: 150px;
+  height: 100%;
+  padding: 1vw;
+}
+
+@media only screen and (max-width: 1300px) {
+  .navigation-wrapper .navigation-buttons-wrapper a {
+    padding: 0 8vw 0 8vw;
+  }
+  .logo {
+    max-width: 0 !important;
+  }
+  sm-grid_2 {
+    grid-template-areas: "a b" "c d" !important;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .title {
+    font-size: 0px !important;
+  }
+  .motto {
+    font-size: 0px !important;
+  }
+  .nav-left {
+    margin: 0;
+    padding: 0;
+  }
+  .nav-right {
+    margin-right: auto;
+  }
+  .navigation-buttons-wrapper {
+    margin-right: 0 !important;
+  }
+  .text-area {
+    font-size: 24px !important;
+  }
+  grid {
+    gap: 2rem !important;
+    grid-template-areas: "a" "b" "c" !important;
+  }
+  html {
+    scrollbar-width: none !important;
+    scrollbar-color: transparent transparent !important;
+  }
+}
+.div-gear {
+  position: fixed;
+  top: -110rem;
+  left: -75rem;
+  z-index: -100;
+  width: 3500px;
+}
+
+.img-gear {
+  position: relative;
+  width: 100%;
+  opacity: 0.02;
+  animation: rotate-TL 90s linear infinite;
+}
+
+@keyframes rotate-TL {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.noise:before {
+  animation: grain 8s steps(10) infinite;
+  background-image: url(../images/grain.png);
+  content: "";
+  height: 300%;
+  left: -50%;
+  opacity: 0.5;
+  position: fixed;
+  top: -110%;
+  width: 300%;
+  z-index: -5;
+}
+.noise.no-scroll {
+  overflow-y: hidden;
+}
+
+@keyframes grain {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(-5%, -10%);
+  }
+  20% {
+    transform: translate(-15%, 5%);
+  }
+  30% {
+    transform: translate(7%, -25%);
+  }
+  40% {
+    transform: translate(-5%, 25%);
+  }
+  50% {
+    transform: translate(-15%, 10%);
+  }
+  60% {
+    transform: translate(15%, 0%);
+  }
+  70% {
+    transform: translate(0%, 15%);
+  }
+  80% {
+    transform: translate(3%, 35%);
+  }
+  90% {
+    transform: translate(-10%, 10%);
+  }
+}
+.decoration {
+  position: absolute;
+  width: 0.75rem;
+  background-color: black;
+  height: 7.5rem;
+  z-index: 1000;
+}
+
+.dec-left_1 {
+  left: 1.9rem;
+}
+
+.dec-left_2 {
+  left: 0.4rem;
+  width: 1.25rem;
+}
+
+.dec-right_1 {
+  right: 1.9rem;
+}
+
+.dec-right_2 {
+  right: 0.4rem;
+  width: 1.25rem;
+}
+
+nav {
+  position: relative;
+  width: 100%;
+  z-index: 100;
+  background-color: crimson;
+  display: flex;
+  align-items: center;
+  transition: 500ms ease-in-out;
+}
+
+.nav-right {
+  margin-left: auto;
+}
+
+.nav-left {
+  margin-right: auto;
+  padding-left: 5rem;
+}
+.nav-left .title {
+  margin: auto;
+  text-align: center;
+}
+.nav-left .motto {
+  margin: auto;
+  margin-bottom: 0.5rem;
+  font-family: "Railway";
+  font-size: 11.5px;
+  text-align: center;
+}
+
+.navigation-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-family: "Norwester";
+  font-size: 36px;
+  color: white;
+}
+.navigation-wrapper .logo {
+  display: block;
+  max-width: 5rem;
+  width: 100%;
+  padding-right: 1rem;
+}
+.navigation-wrapper .navigation-buttons-wrapper {
+  display: flex;
+  display: inline-flex;
+  margin-right: 2.65rem;
+}
+.navigation-wrapper .navigation-buttons-wrapper a {
+  color: inherit;
+  text-decoration: none;
+  padding: 0 6rem 0 6rem;
+}
+.navigation-wrapper .navigation-buttons-wrapper a:hover {
+  background-color: white;
+  color: crimson;
+}
+
+.text-underline {
+  text-decoration: underline !important;
+}
+
+footer {
+  margin-top: 2rem;
+  padding-top: 3rem;
+  position: relative;
+  width: 100%;
+  z-index: 100;
+  background-color: crimson;
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1300px) {
+  .navigation-wrapper .navigation-buttons-wrapper a {
+    padding: 0 8vw 0 8vw;
+  }
+  .logo {
+    max-width: 0 !important;
+  }
+  sm-grid_2 {
+    grid-template-areas: "a b" "c d" !important;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .title {
+    font-size: 0px !important;
+  }
+  .motto {
+    font-size: 0px !important;
+  }
+  .nav-left {
+    margin: 0;
+    padding: 0;
+  }
+  .nav-right {
+    margin-right: auto;
+  }
+  .navigation-buttons-wrapper {
+    margin-right: 0 !important;
+  }
+  .text-area {
+    font-size: 24px !important;
+  }
+  grid {
+    gap: 2rem !important;
+    grid-template-areas: "a" "b" "c" !important;
+  }
+  html {
+    scrollbar-width: none !important;
+    scrollbar-color: transparent transparent !important;
+  }
+}
+gallery {
+  display: flex;
+  position: relative;
+  margin: auto;
+  max-width: 80rem;
+  width: 100%;
+  padding: 3rem 3rem 15rem 3rem;
+  align-items: center;
+  box-sizing: border-box;
+}
+gallery grid-gallery {
+  position: relative;
+  padding: 2rem;
+  display: grid;
+  margin: auto;
+  width: 100%;
+  gap: 2rem;
+  justify-content: center;
+  grid-auto-columns: 200px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  background: rgb(255, 255, 255);
+  border-width: 3px 0 3px 0;
+  border-color: crimson;
+  border-style: solid;
+  border-radius: 1rem;
+  box-sizing: border-box;
+}
+gallery grid-gallery a {
+  position: relative;
+  align-self: center;
+  align-items: center;
+  display: flex;
+}
+gallery grid-gallery a ::before {
+  background-color: crimson;
+}
+gallery grid-gallery a :hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+gallery grid-gallery a img {
+  width: 100%;
+  border-style: solid;
+  border-width: 2px 0 2px 0;
+  border-color: crimson;
+  border-radius: 1rem;
+  transition: 200ms ease-in-out;
+}/*# sourceMappingURL=gallery.css.map */

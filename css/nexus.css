@@ -200,14 +200,13 @@ nav {
 
 footer {
   margin-top: 2rem;
-  padding-top: 2rem;
+  padding-top: 3rem;
   position: relative;
   width: 100%;
   z-index: 100;
   background-color: crimson;
   display: flex;
   align-items: center;
-  transition: 500ms ease-in-out;
 }
 
 grid {
@@ -367,34 +366,11 @@ sm-grid_2 div a {
   .logo {
     max-width: 0 !important;
   }
-  .gallery-wrapper {
-    grid-template: 400px/400px 400px !important;
-    gap: 4vw !important;
-  }
-  .gallery-wrapper {
-    padding: 0 !important;
-  }
-  .gallery-wrapper-wrapper {
-    padding-top: 175px !important;
-    padding-left: 5vw !important;
-    padding-right: 5vw !important;
-  }
   sm-grid_2 {
     grid-template-areas: "a b" "c d" !important;
   }
-  .text-area {
-    font-size: 16px !important;
-  }
 }
 @media only screen and (max-width: 950px) {
-  .image-wrapper {
-    height: 600px !important;
-    width: 600px !important;
-  }
-  .gallery-wrapper {
-    grid-template: 600px/600px !important;
-    gap: 4vw !important;
-  }
   .title {
     font-size: 0px !important;
   }
@@ -418,24 +394,8 @@ sm-grid_2 div a {
     gap: 2rem !important;
     grid-template-areas: "a" "b" "c" !important;
   }
-}
-@media only screen and (max-width: 750px) {
-  .image-wrapper {
-    height: 500px !important;
-    width: 500px !important;
-  }
-  .gallery-wrapper {
-    grid-template: 500px/500px !important;
-    gap: 4vw !important;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .image-wrapper {
-    height: 400px !important;
-    width: 400px !important;
-  }
-  .gallery-wrapper {
-    grid-template: 400px/400px !important;
-    gap: 4vw !important;
+  html {
+    scrollbar-width: none !important;
+    scrollbar-color: transparent transparent !important;
   }
 }/*# sourceMappingURL=nexus.css.map */
