@@ -71,6 +71,39 @@ sm-grid_1 {
     align-items: stretch;
     box-sizing: border-box;
     border-radius: 1rem;
+
+    div {
+        a {
+            display: block;
+            border-width: 2px 0 2px 0;
+            border-color: crimson;
+            border-style: solid;
+            border-radius: 0.75rem;
+        }
+    }
+}
+
+sm-grid_2 {
+    display: grid;
+    grid-template-areas:
+        "a b" "c d";
+    width: 100%;
+    padding: 1rem;
+    gap: 0.5rem;
+    justify-content: stretch;
+    align-items: stretch;
+    box-sizing: border-box;
+    border-radius: 1rem;
+
+    div {
+        a {
+            display: block;
+            border-width: 2px 0 2px 0;
+            border-color: crimson;
+            border-style: solid;
+            border-radius: 0.75rem;
+        }
+    }
 }
 
 .padding-auto {
@@ -83,6 +116,8 @@ sm-grid_1 {
 
     :hover {
         background-color: crimson;
+        border-color: black;
+        border-radius: 0.75rem;
     }
 }
 
@@ -91,6 +126,8 @@ sm-grid_1 {
 
     :hover {
         background-color: crimson;
+        border-color: black;
+        border-radius: 0.75rem;
     }
 }
 
@@ -99,6 +136,18 @@ sm-grid_1 {
 
     :hover {
         background-color: crimson;
+        border-color: black;
+        border-radius: 0.75rem;
+    }
+}
+
+.smg-d {
+    grid-area: d;
+
+    :hover {
+        background-color: crimson;
+        border-color: black;
+        border-radius: 0.75rem;
     }
 }
 
@@ -108,19 +157,6 @@ sm-grid_1 {
     max-width: 150px;
     max-height: 150px;
     height: 100%;
-}
-
-sm-grid_2 {
-    display: grid;
-    grid-template-areas:
-        "a a" "b c";
-    width: 100%;
-    padding: 1rem;
-    gap: 0.5rem;
-    justify-content: stretch;
-    align-items: stretch;
-    box-sizing: border-box;
-    border-radius: 1rem;
 }
 
 .PS {

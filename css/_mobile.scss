@@ -32,7 +32,10 @@
 
     sm-grid_2 {
         grid-template-areas:
-            "a" "b" "c" !important;
+            "a"
+            "b"
+            "c"
+            "d" !important;
     }
 
     .social-media {
@@ -89,6 +92,13 @@
     .gallery-wrapper {
         grid-template: 500px/ 500px !important;
         gap: 4vw !important;
+    }
+
+    grid {
+        grid-template-areas:
+            "a"
+            "b"
+            "c" !important;
     }
 }
 
