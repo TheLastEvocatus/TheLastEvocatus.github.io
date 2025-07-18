@@ -2,7 +2,6 @@
     background-color: rgb(255, 255, 255);
     scroll-behavior: smooth;
     overflow: scroll;
-    transition: padding 100ms ease-in-out;
     scrollbar-width: thin;
     scrollbar-color: crimson black;
     scroll-behavior: smooth;
@@ -22,6 +21,8 @@ body {
     }
 }
 
+$transition: 200ms ease-in-out;
+
 @font-face {
     font-family: 'Norwester';
     src: url(../fonts/norwester/norwester.otf);
@@ -31,7 +32,7 @@ body {
 
 @font-face {
     font-family: 'Railway';
-    src: url(../fonts/railway/railway.otf);
+    src: url(../fonts/railway/Railway.otf);
     font-style: normal;
     font-weight: normal;
 }

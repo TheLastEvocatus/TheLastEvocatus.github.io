@@ -1,20 +1,20 @@
 ﻿grid {
+    position: relative;
     display: grid;
     grid-template-areas:
         "a a"
         "b c";
     max-width: 70rem;
     width: 100%;
-    padding: 0.25rem;
+    padding: 3rem 3rem 15rem 3rem;
     gap: 1rem;
     justify-content: stretch;
     align-items: stretch;
     background: rgba(255, 0, 0, 0);
     box-sizing: border-box;
-    margin: 15rem auto;
+    margin: auto;
     border-radius: 1rem;
-    padding-right: 3rem;
-    padding-left: 3rem;
+    transition: $transition;
 }
 
 element {
@@ -22,10 +22,11 @@ element {
     text-align: center;
     width: 100%;
     background: rgb(255, 255, 255);
-    border-width: 2px 0 2px 0;
+    border-width: 3px 0 3px 0;
     border-color: crimson;
     border-style: solid;
     border-radius: 0.75rem;
+    transition: $transition;
 }
 
 .heading-area {
@@ -71,10 +72,14 @@ sm-grid_1 {
     align-items: stretch;
     box-sizing: border-box;
     border-radius: 1rem;
+    transition: $transition;
 
     div {
+
         a {
-            display: block;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             border-width: 2px 0 2px 0;
             border-color: crimson;
             border-style: solid;
@@ -94,21 +99,20 @@ sm-grid_2 {
     align-items: stretch;
     box-sizing: border-box;
     border-radius: 1rem;
+    transition: $transition;
 
     div {
+
         a {
-            display: block;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             border-width: 2px 0 2px 0;
             border-color: crimson;
             border-style: solid;
             border-radius: 0.75rem;
         }
     }
-}
-
-.padding-auto {
-    padding-left: 5rem;
-    padding-right: 5rem;
 }
 
 .smg-a {
@@ -157,10 +161,6 @@ sm-grid_2 {
     max-width: 150px;
     max-height: 150px;
     height: 100%;
-}
+    padding: 1vw;
 
-.PS {
-    font-size: 50%;
-    margin: 0;
-    margin-bottom: 25px;
 }

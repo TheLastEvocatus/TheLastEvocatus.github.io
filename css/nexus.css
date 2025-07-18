@@ -2,7 +2,6 @@ html {
   background-color: rgb(255, 255, 255);
   scroll-behavior: smooth;
   overflow: scroll;
-  transition: padding 100ms ease-in-out;
   scrollbar-width: thin;
   scrollbar-color: crimson black;
   scroll-behavior: smooth;
@@ -29,7 +28,7 @@ body .wrapper {
 }
 @font-face {
   font-family: "Railway";
-  src: url(../fonts/railway/railway.otf);
+  src: url(../fonts/railway/Railway.otf);
   font-style: normal;
   font-weight: normal;
 }
@@ -137,12 +136,13 @@ body .wrapper {
 }
 
 nav {
-  position: absolute;
+  position: relative;
   width: 100%;
   z-index: 100;
   background-color: crimson;
   display: flex;
   align-items: center;
+  transition: 500ms ease-in-out;
 }
 
 .nav-right {
@@ -198,21 +198,33 @@ nav {
   text-decoration: underline !important;
 }
 
+footer {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  position: relative;
+  width: 100%;
+  z-index: 100;
+  background-color: crimson;
+  display: flex;
+  align-items: center;
+  transition: 500ms ease-in-out;
+}
+
 grid {
+  position: relative;
   display: grid;
   grid-template-areas: "a a" "b c";
   max-width: 70rem;
   width: 100%;
-  padding: 0.25rem;
+  padding: 3rem 3rem 15rem 3rem;
   gap: 1rem;
   justify-content: stretch;
   align-items: stretch;
   background: rgba(255, 0, 0, 0);
   box-sizing: border-box;
-  margin: 15rem auto;
+  margin: auto;
   border-radius: 1rem;
-  padding-right: 3rem;
-  padding-left: 3rem;
+  transition: 200ms ease-in-out;
 }
 
 element {
@@ -220,10 +232,11 @@ element {
   text-align: center;
   width: 100%;
   background: rgb(255, 255, 255);
-  border-width: 2px 0 2px 0;
+  border-width: 3px 0 3px 0;
   border-color: crimson;
   border-style: solid;
   border-radius: 0.75rem;
+  transition: 200ms ease-in-out;
 }
 
 .heading-area {
@@ -268,9 +281,12 @@ sm-grid_1 {
   align-items: stretch;
   box-sizing: border-box;
   border-radius: 1rem;
+  transition: 200ms ease-in-out;
 }
 sm-grid_1 div a {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-width: 2px 0 2px 0;
   border-color: crimson;
   border-style: solid;
@@ -287,18 +303,16 @@ sm-grid_2 {
   align-items: stretch;
   box-sizing: border-box;
   border-radius: 1rem;
+  transition: 200ms ease-in-out;
 }
 sm-grid_2 div a {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-width: 2px 0 2px 0;
   border-color: crimson;
   border-style: solid;
   border-radius: 0.75rem;
-}
-
-.padding-auto {
-  padding-left: 5rem;
-  padding-right: 5rem;
 }
 
 .smg-a {
@@ -343,12 +357,7 @@ sm-grid_2 div a {
   max-width: 150px;
   max-height: 150px;
   height: 100%;
-}
-
-.PS {
-  font-size: 50%;
-  margin: 0;
-  margin-bottom: 25px;
+  padding: 1vw;
 }
 
 @media only screen and (max-width: 1300px) {
@@ -370,18 +379,8 @@ sm-grid_2 div a {
     padding-left: 5vw !important;
     padding-right: 5vw !important;
   }
-  .social-media {
-    min-width: 50px;
-    min-height: 50px;
-    max-width: 125px;
-    max-height: 125px;
-  }
   sm-grid_2 {
-    grid-template-areas: "a" "b" "c" "d" !important;
-  }
-  .social-media {
-    padding-left: 5rem !important;
-    padding-right: 5rem !important;
+    grid-template-areas: "a b" "c d" !important;
   }
   .text-area {
     font-size: 16px !important;
@@ -412,6 +411,13 @@ sm-grid_2 div a {
   .navigation-buttons-wrapper {
     margin-right: 0 !important;
   }
+  .text-area {
+    font-size: 24px !important;
+  }
+  grid {
+    gap: 2rem !important;
+    grid-template-areas: "a" "b" "c" !important;
+  }
 }
 @media only screen and (max-width: 750px) {
   .image-wrapper {
@@ -421,9 +427,6 @@ sm-grid_2 div a {
   .gallery-wrapper {
     grid-template: 500px/500px !important;
     gap: 4vw !important;
-  }
-  grid {
-    grid-template-areas: "a" "b" "c" !important;
   }
 }
 @media only screen and (max-width: 600px) {
