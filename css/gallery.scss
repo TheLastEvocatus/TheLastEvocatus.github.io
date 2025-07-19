@@ -2,8 +2,8 @@ html {
     background-color: rgb(255, 255, 255);
     scroll-behavior: smooth;
     overflow-x: hidden;
-    overflow-y: hidden;
-    scrollbar-width: thin;
+    overflow-y: scroll;
+    scrollbar-width: none;
     scrollbar-color: crimson black;
     scroll-behavior: smooth;
 }
@@ -59,7 +59,7 @@ gallery {
     margin: auto;
     max-width: 80rem;
     width: 100%;
-    padding: 3rem 3rem 10rem 3rem;
+    padding: 3rem 3rem 15rem 3rem;
     align-items: center;
     box-sizing: border-box;
 
@@ -87,7 +87,6 @@ gallery {
             align-items: center;
 
             :hover {
-                background-color: crimson;
                 opacity: 0.66;
                 cursor: pointer;
             }
