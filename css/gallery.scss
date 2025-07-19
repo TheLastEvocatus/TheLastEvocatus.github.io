@@ -87,7 +87,7 @@ gallery {
             align-items: center;
 
             :hover {
-                opacity: 0.66;
+                opacity: 0.5;
                 cursor: pointer;
             }
 
@@ -99,6 +99,8 @@ gallery {
                 border-color: $main_colour;
                 border-radius: 2rem;
                 transition: $transition;
+
+
             }
         }
     }

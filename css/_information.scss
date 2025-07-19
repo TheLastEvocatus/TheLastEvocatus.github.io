@@ -116,44 +116,40 @@ sm-grid_2 {
     }
 }
 
+sm-grid_1,
+sm-grid_2 {
+    div {
+        :hover {
+            background-color: $main_colour;
+            border-color: black;
+            border-radius: 0.75rem;
+        }
+
+        a {
+            transition: $transition;
+            cursor: pointer;
+
+            :hover {
+                background-color: transparent;
+            }
+        }
+    }
+}
+
 .smg-a {
     grid-area: a;
-
-    :hover {
-        background-color: crimson;
-        border-color: black;
-        border-radius: 0.75rem;
-    }
 }
 
 .smg-b {
     grid-area: b;
-
-    :hover {
-        background-color: crimson;
-        border-color: black;
-        border-radius: 0.75rem;
-    }
 }
 
 .smg-c {
     grid-area: c;
-
-    :hover {
-        background-color: crimson;
-        border-color: black;
-        border-radius: 0.75rem;
-    }
 }
 
 .smg-d {
     grid-area: d;
-
-    :hover {
-        background-color: crimson;
-        border-color: black;
-        border-radius: 0.75rem;
-    }
 }
 
 .social-media {

@@ -72,7 +72,7 @@ body:before {
   position: fixed;
   top: -110%;
   width: 300%;
-  z-index: -5;
+  z-index: -50;
 }
 body.no-scroll {
   overflow-y: hidden;
@@ -345,40 +345,36 @@ sm-grid_2 div a {
   border-radius: 0.75rem;
 }
 
-.smg-a {
-  grid-area: a;
-}
-.smg-a :hover {
+sm-grid_1 div :hover,
+sm-grid_2 div :hover {
   background-color: crimson;
   border-color: black;
   border-radius: 0.75rem;
+}
+sm-grid_1 div a,
+sm-grid_2 div a {
+  transition: 200ms ease-in-out;
+  cursor: pointer;
+}
+sm-grid_1 div a :hover,
+sm-grid_2 div a :hover {
+  background-color: transparent;
+}
+
+.smg-a {
+  grid-area: a;
 }
 
 .smg-b {
   grid-area: b;
 }
-.smg-b :hover {
-  background-color: crimson;
-  border-color: black;
-  border-radius: 0.75rem;
-}
 
 .smg-c {
   grid-area: c;
 }
-.smg-c :hover {
-  background-color: crimson;
-  border-color: black;
-  border-radius: 0.75rem;
-}
 
 .smg-d {
   grid-area: d;
-}
-.smg-d :hover {
-  background-color: crimson;
-  border-color: black;
-  border-radius: 0.75rem;
 }
 
 .social-media {

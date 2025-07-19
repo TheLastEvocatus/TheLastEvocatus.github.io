@@ -72,7 +72,7 @@ body:before {
   position: fixed;
   top: -110%;
   width: 300%;
-  z-index: -5;
+  z-index: -50;
 }
 body.no-scroll {
   overflow-y: hidden;
@@ -313,7 +313,7 @@ gallery grid-gallery a {
   align-items: center;
 }
 gallery grid-gallery a :hover {
-  opacity: 0.66;
+  opacity: 0.5;
   cursor: pointer;
 }
 gallery grid-gallery a img {
