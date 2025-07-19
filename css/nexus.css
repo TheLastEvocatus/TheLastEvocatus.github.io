@@ -178,6 +178,7 @@ nav {
 .nav-left .title {
   margin: auto;
   text-align: center;
+  transition: 200ms cubic-bezier(0.65, 0.05, 0.36, 1);
 }
 .nav-left .motto {
   margin: auto;
@@ -185,6 +186,7 @@ nav {
   font-family: "Railway";
   font-size: 11.5px;
   text-align: center;
+  transition: 200ms cubic-bezier(0.65, 0.05, 0.36, 1);
 }
 
 .navigation-wrapper {
@@ -195,11 +197,19 @@ nav {
   font-size: 36px;
   color: white;
 }
+.navigation-wrapper .logo-button {
+  display: flex;
+  margin-right: 1rem;
+}
+.navigation-wrapper .logo-button :hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
 .navigation-wrapper .logo {
   display: block;
   max-width: 5rem;
   width: 100%;
-  padding-right: 1rem;
+  transition: 200ms cubic-bezier(0.65, 0.05, 0.36, 1);
 }
 .navigation-wrapper .navigation-buttons-wrapper {
   position: relative;
@@ -218,6 +228,7 @@ nav {
   text-decoration: none;
   min-width: 15rem;
   width: 15vw;
+  transition: 200ms cubic-bezier(0.65, 0.05, 0.36, 1);
 }
 .navigation-wrapper .navigation-buttons-wrapper a:hover {
   background-color: white;
@@ -253,7 +264,7 @@ grid {
   box-sizing: border-box;
   margin: auto;
   border-radius: 1rem;
-  transition: 200ms ease-in-out;
+  transition: 200ms cubic-bezier(0.65, 0.05, 0.36, 1);
 }
 
 element {
@@ -265,7 +276,7 @@ element {
   border-color: crimson;
   border-style: solid;
   border-radius: 0.75rem;
-  transition: 200ms ease-in-out;
+  transition: 200ms cubic-bezier(0.65, 0.05, 0.36, 1);
 }
 
 .heading-area {
@@ -311,7 +322,7 @@ sm-grid_1 {
   align-items: stretch;
   box-sizing: border-box;
   border-radius: 1rem;
-  transition: 200ms ease-in-out;
+  transition: 200ms cubic-bezier(0.65, 0.05, 0.36, 1);
 }
 sm-grid_1 div a {
   display: flex;
@@ -333,7 +344,7 @@ sm-grid_2 {
   align-items: stretch;
   box-sizing: border-box;
   border-radius: 1rem;
-  transition: 200ms ease-in-out;
+  transition: 200ms cubic-bezier(0.65, 0.05, 0.36, 1);
 }
 sm-grid_2 div a {
   display: flex;
@@ -353,7 +364,7 @@ sm-grid_2 div :hover {
 }
 sm-grid_1 div a,
 sm-grid_2 div a {
-  transition: 200ms ease-in-out;
+  transition: 200ms cubic-bezier(0.65, 0.05, 0.36, 1);
   cursor: pointer;
 }
 sm-grid_1 div a :hover,
