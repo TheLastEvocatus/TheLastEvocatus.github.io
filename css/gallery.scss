@@ -1,6 +1,5 @@
 html {
     background-color: rgb(255, 255, 255);
-    scroll-behavior: smooth;
     overflow-x: hidden;
     overflow-y: scroll;
     scrollbar-width: none;
@@ -21,7 +20,7 @@ body {
     min-height: 100vh;
 }
 
-$transition: 200ms cubic-bezier(.65, .05, .36, 1);
+$transition: 150ms cubic-bezier(.65, .05, .36, 1);
 $main_colour: crimson;
 $secondary_colour: white;
 

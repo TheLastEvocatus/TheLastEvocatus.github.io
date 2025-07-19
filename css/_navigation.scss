@@ -77,7 +77,7 @@ nav {
             text-decoration: none;
             min-width: 15rem;
             width: 15vw;
-            transition: $transition;
+            transition: 100ms cubic-bezier(.65, .05, .36, 1);
         }
 
         a:hover {
