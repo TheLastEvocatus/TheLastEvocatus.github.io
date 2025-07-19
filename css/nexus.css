@@ -1,7 +1,8 @@
 html {
   background-color: rgb(255, 255, 255);
   scroll-behavior: smooth;
-  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: scroll;
   scrollbar-width: thin;
   scrollbar-color: crimson black;
   scroll-behavior: smooth;
@@ -10,11 +11,11 @@ html {
 body {
   margin: 0;
   padding: 0;
+  border: 0;
   overflow: hidden;
+  width: 100%;
   height: 100%;
   position: relative;
-}
-body .wrapper {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -61,19 +62,19 @@ body .wrapper {
     transform: rotate(360deg);
   }
 }
-.noise:before {
+body:before {
   animation: grain 8s steps(10) infinite;
   background-image: url(../images/grain.png);
   content: "";
   height: 300%;
   left: -50%;
-  opacity: 0.5;
+  opacity: 0.4;
   position: fixed;
   top: -110%;
   width: 300%;
   z-index: -5;
 }
-.noise.no-scroll {
+body.no-scroll {
   overflow-y: hidden;
 }
 
@@ -135,6 +136,27 @@ body .wrapper {
   width: 1.25rem;
 }
 
+.dec-f {
+  bottom: 0;
+  height: 3.3rem !important;
+}
+
+.dec-v {
+  top: 115px;
+  height: 30rem !important;
+  z-index: -1000;
+  opacity: 0.25;
+  background: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0)) !important;
+}
+
+.dec-b {
+  bottom: 3rem;
+  height: 10rem !important;
+  z-index: -1000;
+  opacity: 0.25;
+  background: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0)) !important;
+}
+
 nav {
   position: relative;
   width: 100%;
@@ -180,14 +202,22 @@ nav {
   padding-right: 1rem;
 }
 .navigation-wrapper .navigation-buttons-wrapper {
-  display: flex;
-  display: inline-flex;
+  position: relative;
+  display: inline-grid;
+  grid-template-areas: "a a";
   margin-right: 2.65rem;
+  margin-left: 2.65rem;
+  align-items: center;
+  justify-content: center;
 }
 .navigation-wrapper .navigation-buttons-wrapper a {
+  display: flex;
+  justify-content: center;
+  position: relative;
   color: inherit;
   text-decoration: none;
-  padding: 0 6rem 0 6rem;
+  min-width: 15rem;
+  width: 15vw;
 }
 .navigation-wrapper .navigation-buttons-wrapper a:hover {
   background-color: white;
@@ -199,7 +229,7 @@ nav {
 }
 
 footer {
-  margin-top: 2rem;
+  margin-top: 0;
   padding-top: 3rem;
   position: relative;
   width: 100%;
@@ -241,9 +271,10 @@ element {
 .heading-area {
   grid-area: a;
   font-family: "Norwester";
-  padding: 24px 0 24px 0;
+  padding: 24px 12px 24px 12px;
   font-size: 60px;
   color: black;
+  box-sizing: border-box;
 }
 
 .text-area {
@@ -360,9 +391,6 @@ sm-grid_2 div a {
 }
 
 @media only screen and (max-width: 1300px) {
-  .navigation-wrapper .navigation-buttons-wrapper a {
-    padding: 0 8vw 0 8vw;
-  }
   .logo {
     max-width: 0 !important;
   }
@@ -372,7 +400,7 @@ sm-grid_2 div a {
 }
 @media only screen and (max-width: 950px) {
   .navigation-wrapper .navigation-buttons-wrapper a {
-    padding: 0 12vw 0 12vw;
+    min-width: 42vw !important;
   }
   .title {
     font-size: 0px !important;
@@ -383,12 +411,11 @@ sm-grid_2 div a {
   .nav-left {
     margin: 0;
     padding: 0;
+    width: 0;
+    height: 0;
   }
   .nav-right {
     margin-right: auto;
-  }
-  .navigation-buttons-wrapper {
-    margin-right: 0 !important;
   }
   .text-area {
     font-size: 24px !important;

@@ -49,14 +49,24 @@ nav {
     }
 
     .navigation-buttons-wrapper {
-        display: flex;
-        display: inline-flex;
+        position: relative;
+        display: inline-grid;
+        grid-template-areas:
+            "a a";
         margin-right: $distance + $width;
+        margin-left: $distance + $width;
+        align-items: center;
+        justify-content: center;
 
         a {
+            display: flex;
+            justify-content: center;
+            position: relative;
             color: inherit;
             text-decoration: none;
-            padding: 0 6rem 0 6rem;
+            min-width: 15rem;
+            width: 15vw;
+
         }
 
         a:hover {
@@ -71,7 +81,7 @@ nav {
 }
 
 footer {
-    margin-top: 2rem;
+    margin-top: 0;
     padding-top: 3rem;
     position: relative;
     width: 100%;

@@ -25,14 +25,14 @@
 
 
 
-.noise {
+body {
     &:before {
         animation: grain 8s steps(10) infinite;
         background-image: url(../images/grain.png);
         content: "";
         height: 300%;
         left: -50%;
-        opacity: 0.5;
+        opacity: 0.4;
         position: fixed;
         top: -110%;
         width: 300%;

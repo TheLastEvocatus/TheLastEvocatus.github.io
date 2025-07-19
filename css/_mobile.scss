@@ -1,9 +1,5 @@
 ﻿@media only screen and (max-width: 1300px) {
 
-    .navigation-wrapper .navigation-buttons-wrapper a {
-        padding: 0 8vw 0 8vw;
-    }
-
     .logo {
         max-width: 0 !important;
     }
@@ -16,8 +12,9 @@
 }
 
 @media only screen and (max-width: 950px) {
+
     .navigation-wrapper .navigation-buttons-wrapper a {
-        padding: 0 12vw 0 12vw;
+        min-width: 42vw !important;
     }
 
     .title {
@@ -31,14 +28,12 @@
     .nav-left {
         margin: 0;
         padding: 0;
+        width: 0;
+        height: 0;
     }
 
     .nav-right {
         margin-right: auto;
-    }
-
-    .navigation-buttons-wrapper {
-        margin-right: 0 !important;
     }
 
     .text-area {

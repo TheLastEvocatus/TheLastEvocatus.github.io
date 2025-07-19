@@ -32,9 +32,10 @@ element {
 .heading-area {
     grid-area: a;
     font-family: 'Norwester';
-    padding: 24px 0 24px 0;
+    padding: 24px 12px 24px 12px;
     font-size: 60px;
     color: black;
+    box-sizing: border-box;
 }
 
 .text-area {
