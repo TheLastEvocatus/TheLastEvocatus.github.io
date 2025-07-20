@@ -28,6 +28,16 @@
         width: 0 !important;
         height: 0 !important;
     }
+
+    gallery {
+        grid-gallery {
+            a {
+                :hover {
+                    opacity: 0.66;
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 950px) {

@@ -39,7 +39,8 @@ gallery {
             align-items: center;
 
             :hover {
-                opacity: 1;
+                transition: opacity 0.75s;
+                opacity: 0.9;
             }
 
             img {
