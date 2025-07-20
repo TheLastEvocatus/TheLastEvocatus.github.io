@@ -16,74 +16,79 @@
     <title>Nexus | Gallery</title>
     <link rel="icon" href="images/TLE_Star_B.png" type="image/png" sizes="512x512" />
     <link href="./css/gallery.css" type="text/css" rel="stylesheet" />
+    <link href="./css/cursor.css" type="text/css" rel="stylesheet" />
 </head>
 
-<body>
+<body id="body" data-mouse="none">
 
-    <span>
-        <div class="decoration dec-left_1"></div>
-        <div class="decoration dec-left_2"></div>
-        <div class="decoration dec-right_1"></div>
-        <div class="decoration dec-right_2"></div>
+    <div id="cursor" class="cursor">
+        <script src="./scripts/cursor.js"></script>
+    </div>
 
-        <div class="decoration dec-left_1 dec-v"></div>
-        <div class="decoration dec-left_2 dec-v"></div>
-        <div class="decoration dec-right_1 dec-v"></div>
-        <div class="decoration dec-right_2 dec-v"></div>
+    <span data-mouse="none">
+        <div class="decoration dec-left_1" data-mouse="none"></div>
+        <div class="decoration dec-left_2" data-mouse="none"></div>
+        <div class="decoration dec-right_1" data-mouse="none"></div>
+        <div class="decoration dec-right_2" data-mouse="none"></div>
 
-        <div class="decoration dec-left_1 dec-b"></div>
-        <div class="decoration dec-left_2 dec-b"></div>
-        <div class="decoration dec-right_1 dec-b"></div>
-        <div class="decoration dec-right_2 dec-b"></div>
+        <div class="decoration dec-left_1 dec-v" data-mouse="none"></div>
+        <div class="decoration dec-left_2 dec-v" data-mouse="none"></div>
+        <div class="decoration dec-right_1 dec-v" data-mouse="none"></div>
+        <div class="decoration dec-right_2 dec-v" data-mouse="none"></div>
 
-        <div class="decoration dec-left_1 dec-f"></div>
-        <div class="decoration dec-left_2 dec-f"></div>
-        <div class="decoration dec-right_1 dec-f"></div>
-        <div class="decoration dec-right_2 dec-f"></div>
+        <div class="decoration dec-left_1 dec-b" data-mouse="none"></div>
+        <div class="decoration dec-left_2 dec-b" data-mouse="none"></div>
+        <div class="decoration dec-right_1 dec-b" data-mouse="none"></div>
+        <div class="decoration dec-right_2 dec-b" data-mouse="none"></div>
+
+        <div class="decoration dec-left_1 dec-f" data-mouse="none"></div>
+        <div class="decoration dec-left_2 dec-f" data-mouse="none"></div>
+        <div class="decoration dec-right_1 dec-f" data-mouse="none"></div>
+        <div class="decoration dec-right_2 dec-f" data-mouse="none"></div>
     </span>
 
-    <nav id="navigation">
-        <div class="navigation-wrapper nav-left">
-            <a href="./index.html" class="logo-button">
-                <img class="logo" src="images/TLE_Star_W.png" />
+    <nav id="navigation" data-mouse="none">
+        <div class="navigation-wrapper nav-left" data-mouse="none">
+            <a href="./index.html" class="logo-button" data-mouse="none">
+                <img class="logo" src="images/TLE_Star_W.png" data-mouse="hoverable" />
             </a>
-            <div>
-                <p class="title">TheLastEvocatus</p>
-                <p class="motto">"Face The Fear, Build The Future" - Lobotomy Corp</p>
+            <div data-mouse="none">
+                <p class="title" data-mouse="none">TheLastEvocatus</p>
+                <p class="motto" data-mouse="none">"Face The Fear, Build The Future" - Lobotomy Corp</p>
             </div>
         </div>
 
-        <div class="navigation-wrapper nav-right">
-            <div class="navigation-buttons-wrapper">
-                <a href="index.html">
+        <div class="navigation-wrapper nav-right" data-mouse="none">
+            <div class="navigation-buttons-wrapper" data-mouse="none">
+                <a href="./index.html" data-mouse="hoverable">
                     <p>Nexus</p>
                 </a>
-                <a href="gallery.html" class="text-underline">
+                <a href="./gallery.html" class="text-underline" data-mouse="hoverable">
                     <p>Gallery</p>
                 </a>
             </div>
         </div>
     </nav>
 
-    <gallery>
-        <grid-gallery>
-            <a href="https://i.imgur.com/k6PZBUE.png">
-                <img src="https://i.imgur.com/k6PZBUE.png">
+    <gallery data-mouse="none">
+        <grid-gallery data-mouse="none">
+            <a href="https://i.imgur.com/k6PZBUE.png" data-mouse="hoverable">
+                <img src="https://i.imgur.com/k6PZBUE.png" data-mouse="hoverable">
             </a>
 
-            <a href="https://i.imgur.com/LKQ6sqf.jpeg">
-                <img src="https://i.imgur.com/LKQ6sqf.jpeg">
+            <a href="https://i.imgur.com/LKQ6sqf.jpeg" data-mouse="hoverable">
+                <img src="https://i.imgur.com/LKQ6sqf.jpeg" data-mouse="hoverable">
             </a>
         </grid-gallery>
     </gallery>
 
 
 
-    <div class="div-gear">
-        <img class="img-gear" src="./images/gear.png" />
+    <div class="div-gear" data-mouse="none">
+        <img class="img-gear" src="./images/gear.png" data-mouse="none" />
     </div>
 
-    <footer>
+    <footer data-mouse="none">
     </footer>
 
 </body>

@@ -16,64 +16,69 @@
     <title>Nexus | Main Page</title>
     <link rel="icon" href="images/TLE_Star_B.png" type="image/png" sizes="512x512" />
     <link href="./css/nexus.css" type="text/css" rel="stylesheet" />
+    <link href="./css/cursor.css" type="text/css" rel="stylesheet" />
 </head>
 
-<body>
+<body id="body" data-mouse="none">
 
-    <span>
-        <div class="decoration dec-left_1"></div>
-        <div class="decoration dec-left_2"></div>
-        <div class="decoration dec-right_1"></div>
-        <div class="decoration dec-right_2"></div>
+    <div id="cursor" class="cursor">
+        <script src="./scripts/cursor.js"></script>
+    </div>
 
-        <div class="decoration dec-left_1 dec-v"></div>
-        <div class="decoration dec-left_2 dec-v"></div>
-        <div class="decoration dec-right_1 dec-v"></div>
-        <div class="decoration dec-right_2 dec-v"></div>
+    <span data-mouse="none">
+        <div class="decoration dec-left_1" data-mouse="none"></div>
+        <div class="decoration dec-left_2" data-mouse="none"></div>
+        <div class="decoration dec-right_1" data-mouse="none"></div>
+        <div class="decoration dec-right_2" data-mouse="none"></div>
 
-        <div class="decoration dec-left_1 dec-b"></div>
-        <div class="decoration dec-left_2 dec-b"></div>
-        <div class="decoration dec-right_1 dec-b"></div>
-        <div class="decoration dec-right_2 dec-b"></div>
+        <div class="decoration dec-left_1 dec-v" data-mouse="none"></div>
+        <div class="decoration dec-left_2 dec-v" data-mouse="none"></div>
+        <div class="decoration dec-right_1 dec-v" data-mouse="none"></div>
+        <div class="decoration dec-right_2 dec-v" data-mouse="none"></div>
 
-        <div class="decoration dec-left_1 dec-f"></div>
-        <div class="decoration dec-left_2 dec-f"></div>
-        <div class="decoration dec-right_1 dec-f"></div>
-        <div class="decoration dec-right_2 dec-f"></div>
+        <div class="decoration dec-left_1 dec-b" data-mouse="none"></div>
+        <div class="decoration dec-left_2 dec-b" data-mouse="none"></div>
+        <div class="decoration dec-right_1 dec-b" data-mouse="none"></div>
+        <div class="decoration dec-right_2 dec-b" data-mouse="none"></div>
+
+        <div class="decoration dec-left_1 dec-f" data-mouse="none"></div>
+        <div class="decoration dec-left_2 dec-f" data-mouse="none"></div>
+        <div class="decoration dec-right_1 dec-f" data-mouse="none"></div>
+        <div class="decoration dec-right_2 dec-f" data-mouse="none"></div>
     </span>
 
-    <nav id="navigation">
-        <div class="navigation-wrapper nav-left">
-            <a href="./index.html" class="logo-button">
-                <img class="logo" src="images/TLE_Star_W.png" />
+    <nav id="navigation" data-mouse="none">
+        <div class="navigation-wrapper nav-left" data-mouse="none">
+            <a href="./index.html" class="logo-button" data-mouse="none">
+                <img class="logo" src="images/TLE_Star_W.png" data-mouse="hoverable" />
             </a>
-            <div>
-                <p class="title">TheLastEvocatus</p>
-                <p class="motto">"Face The Fear, Build The Future" - Lobotomy Corp</p>
+            <div data-mouse="none">
+                <p class="title" data-mouse="none">TheLastEvocatus</p>
+                <p class="motto" data-mouse="none">"Face The Fear, Build The Future" - Lobotomy Corp</p>
             </div>
         </div>
 
-        <div class="navigation-wrapper nav-right">
-            <div class="navigation-buttons-wrapper">
-                <a href="./index.html" class="text-underline">
+        <div class="navigation-wrapper nav-right" data-mouse="none">
+            <div class="navigation-buttons-wrapper" data-mouse="none">
+                <a href="./index.html" class="text-underline" data-mouse="hoverable">
                     <p>Nexus</p>
                 </a>
-                <a href="./gallery.html">
+                <a href="./gallery.html" data-mouse="hoverable">
                     <p>Gallery</p>
                 </a>
             </div>
         </div>
     </nav>
 
-    <grid>
-        <element class="heading-area">
+    <grid data-mouse="none">
+        <element class="heading-area" data-mouse="none">
             <hr>
             <hr>
             Welcome to the Nexus
             <hr>
             <hr>
         </element>
-        <element class="text-area">
+        <element class="text-area" data-mouse="none">
             <p>Hi! I made this little personal page to organise my accounts on different social media.</p>
             <p>You can contact me using any of them, but I'm most active on <b>Discord</b> or <b>Deviantart</b>
                 (even if
@@ -85,40 +90,47 @@
             <p>Have a nice day!</p>
             <p>:3</p>
         </element>
-        <element class="social-area">
-            <sm-grid_1>
+        <element class="social-area" data-mouse="none">
+            <sm-grid_1 data-mouse="none">
                 <div class="smg-a">
-                    <a href="https://www.deviantart.com/thelastevocatus" target="blank">
-                        <img class="social-media" src="./images/deviantart.png" alt="DeviantArt" title="DeviantArt">
+                    <a href="https://www.deviantart.com/thelastevocatus" target="blank" data-mouse="hoverable">
+                        <img class="social-media" src="./images/deviantart.png" alt="DeviantArt" title="DeviantArt"
+                            data-mouse="hoverable">
                     </a>
                 </div>
                 <div class="smg-b">
-                    <a href="https://discord.com/users/1270311158532018218" target="blank">
-                        <img class="social-media" src="./images/discord.png" alt="Discord" title="Discord">
+                    <a href="https://discord.com/users/1270311158532018218" target="blank" data-mouse="hoverable">
+                        <img class="social-media" src="./images/discord.png" alt="Discord" title="Discord"
+                            data-mouse="hoverable">
                     </a>
                 </div>
             </sm-grid_1>
             <hr>
             <hr>
-            <sm-grid_2>
+            <sm-grid_2 data-mouse="none">
                 <div class="smg-a">
-                    <a href="https://bsky.app/profile/thelastevocatus.bsky.social" target="_blank">
-                        <img class="social-media" src="./images/bluesky.png" alt="Bluesky" title="Bluesky">
+                    <a href="https://bsky.app/profile/thelastevocatus.bsky.social" target="_blank"
+                        data-mouse="hoverable">
+                        <img class="social-media" src="./images/bluesky.png" alt="Bluesky" title="Bluesky"
+                            data-mouse="hoverable">
                     </a>
                 </div>
                 <div class="smg-b">
-                    <a href="https://www.pixiv.net/en/users/113093937" target="blank">
-                        <img class="social-media" src="./images/pixiv.png" alt="Pixiv" title="Pixiv">
+                    <a href="https://www.pixiv.net/en/users/113093937" target="blank" data-mouse="hoverable">
+                        <img class="social-media" src="./images/pixiv.png" alt="Pixiv" title="Pixiv"
+                            data-mouse="hoverable">
                     </a>
                 </div>
                 <div class="smg-c">
-                    <a href="https://www.tumblr.com/thelastevocatus" target="blank">
-                        <img class="social-media" src="./images/tumblr.png" alt="Tumblr" title="Tumblr">
+                    <a href="https://www.tumblr.com/thelastevocatus" target="blank" data-mouse="hoverable">
+                        <img class="social-media" src="./images/tumblr.png" alt="Tumblr" title="Tumblr"
+                            data-mouse="hoverable">
                     </a>
                 </div>
                 <div class="smg-d">
-                    <a href="https://ru.pinterest.com/TL_Evocatus/" target="blank">
-                        <img class="social-media" src="./images/pintirest.png" alt="Pintirest" title="Pintirest">
+                    <a href="https://ru.pinterest.com/TL_Evocatus/" target="blank" data-mouse="hoverable">
+                        <img class="social-media" src="./images/pintirest.png" alt="Pintirest" title="Pintirest"
+                            data-mouse="hoverable">
                     </a>
                 </div>
             </sm-grid_2>
@@ -127,12 +139,13 @@
 
 
 
-    <div class="div-gear">
+    <div class="div-gear" data-mouse="none">
         <img class="img-gear" src="./images/gear.png" />
     </div>
 
-    <footer>
+    <footer data-mouse="none">
     </footer>
+
 </body>
 
 <!--
