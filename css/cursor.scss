@@ -10,11 +10,11 @@ $cursor-b: 100px;
     width: $cursor;
     height: $cursor;
     transform: translate(-50%, -50%);
-    background: rgba(220, 20, 60, 0.75);
+    background: rgba(220, 20, 60, 0.66);
     border-radius: 50%;
     border: 1px solid black;
     pointer-events: none;
-    transition: top 0.1s, left 0.1s, height 0.5s, width 0.5s;
+    transition: top 0.08s, left 0.08s, height 0.5s, width 0.5s;
     z-index: 10000;
 }
 

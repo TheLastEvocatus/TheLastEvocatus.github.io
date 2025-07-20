@@ -105,7 +105,7 @@ body.no-scroll {
     transform: translate(-10%, 10%);
   }
 }
-.decoration {
+dec {
   position: absolute;
   width: 0.75rem;
   background-color: black;

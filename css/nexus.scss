@@ -46,13 +46,17 @@ element {
 
 .text-area {
     grid-area: b;
-    font-family: 'SourceHanSerifCN';
+    font-family: 'SourceHanSerifCN', 'Times New Roman';
     font-size: 20px;
     text-align: justify;
-    text-indent: 2rem;
+    text-indent: 1rem;
     color: black;
     box-sizing: border-box;
-    padding: 0 1rem 0 1rem;
+    padding: 0 2rem 0 2rem;
+
+    .center {
+        text-align: center !important;
+    }
 }
 
 .social-area {

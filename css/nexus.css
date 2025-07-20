@@ -105,7 +105,7 @@ body.no-scroll {
     transform: translate(-10%, 10%);
   }
 }
-.decoration {
+dec {
   position: absolute;
   width: 0.75rem;
   background-color: black;
@@ -284,13 +284,16 @@ element {
 
 .text-area {
   grid-area: b;
-  font-family: "SourceHanSerifCN";
+  font-family: "SourceHanSerifCN", "Times New Roman";
   font-size: 20px;
   text-align: justify;
-  text-indent: 2rem;
+  text-indent: 1rem;
   color: black;
   box-sizing: border-box;
-  padding: 0 1rem 0 1rem;
+  padding: 0 2rem 0 2rem;
+}
+.text-area .center {
+  text-align: center !important;
 }
 
 .social-area {
