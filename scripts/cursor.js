@@ -8,6 +8,16 @@ body.onmousemove = function (e) {
     cursor.className = "cursor hover";
   }
   if (e.target.dataset.mouse == "none") {
-    cursor.className = "cursor hover-out";
+    cursor.className = "cursor";
   }
 };
+
+body.onclick = function (e) {
+  cursor.style["animation-name"] = "click";
+  cursor.style["animation-duration"] = "0.25s";
+  setTimeout(retime, 250);
+};
+function retime() {
+  cursor.style["animation-name"] = "";
+  cursor.style["animation-duration"] = "";
+}

@@ -397,6 +397,21 @@ sm-grid_2 div a :hover {
   sm-grid_2 {
     grid-template-areas: "a b" "c d" !important;
   }
+  * {
+    cursor: auto !important;
+  }
+  img {
+    cursor: pointer !important;
+  }
+  a {
+    cursor: pointer !important;
+  }
+  .cursor {
+    border: 0px !important;
+    z-index: 0 !important;
+    width: 0 !important;
+    height: 0 !important;
+  }
 }
 @media only screen and (max-width: 950px) {
   .navigation-wrapper .navigation-buttons-wrapper a {
