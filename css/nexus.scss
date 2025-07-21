@@ -12,7 +12,7 @@ grid {
         "b c";
     max-width: 70rem;
     width: 100%;
-    padding: 3rem 3rem 15rem 3rem;
+    padding: 3rem 4rem 15rem 4rem;
     gap: 1rem;
     justify-content: stretch;
     align-items: stretch;
@@ -27,7 +27,7 @@ element {
     position: relative;
     text-align: center;
     width: 100%;
-    background: rgb(255, 255, 255);
+    background: rgba(255, 255, 255, 0.5);
     border-width: 3px 0 3px 0;
     border-color: crimson;
     border-style: solid;
@@ -72,18 +72,22 @@ hr {
     margin-bottom: 0.5rem;
 }
 
-sm-grid_1 {
+sm-grid_1,
+sm-grid_2 {
     display: grid;
-    grid-template-areas:
-        "a" "b";
     width: 100%;
     padding: 1rem;
-    gap: 0.5rem;
+    gap: 0.75rem;
     justify-content: stretch;
     align-items: stretch;
     box-sizing: border-box;
     border-radius: 1rem;
     transition: $transition;
+}
+
+sm-grid_1 {
+    grid-template-areas:
+        "a" "b";
 
     div {
 
@@ -100,17 +104,10 @@ sm-grid_1 {
 }
 
 sm-grid_2 {
-    display: grid;
     grid-template-areas:
-        "a b" "c d";
-    width: 100%;
-    padding: 1rem;
-    gap: 0.5rem;
-    justify-content: stretch;
-    align-items: stretch;
-    box-sizing: border-box;
-    border-radius: 1rem;
-    transition: $transition;
+        "a b"
+        //"c d"
+    ;
 
     div {
 

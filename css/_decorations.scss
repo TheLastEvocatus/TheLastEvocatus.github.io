@@ -6,7 +6,6 @@ dec {
     position: absolute;
     width: $width;
     background-color: black;
-    height: 7.5rem;
     z-index: 1000;
 }
 
@@ -27,6 +26,11 @@ dec {
 .dec-right_2 {
     right: $distance - $margin;
     width: $width + 0.5rem;
+}
+
+.dec-n {
+    top: 0;
+    height: 7.5rem;
 }
 
 .dec-f {

@@ -1,4 +1,4 @@
-﻿@media only screen and (max-width: 1300px) {
+﻿@media only screen and (max-width: 1100px) {
 
     .logo {
         max-width: 0 !important;
@@ -7,19 +7,8 @@
     sm-grid_2 {
         grid-template-areas:
             "a b"
-            "c d" !important;
-    }
-
-    * {
-        cursor: auto !important;
-    }
-
-    img {
-        cursor: pointer !important;
-    }
-
-    a {
-        cursor: pointer !important;
+            //"c d"
+            !important;
     }
 
     .cursor {
@@ -80,5 +69,15 @@
     html {
         scrollbar-width: none !important;
         scrollbar-color: transparent transparent !important;
+    }
+
+    sm-grid_1 {
+        grid-template-areas:
+            "a b";
+    }
+
+    hr {
+        margin-top: 0.4rem;
+        margin-bottom: 0.4rem;
     }
 }

@@ -1,9 +1,11 @@
-* {
-    cursor: none;
+@media only screen and (min-width: 1100px) {
+    * {
+        cursor: none;
+    }
 }
 
 $cursor: 11px;
-$cursor-b: 100px;
+$cursor-b: 90px;
 
 .cursor {
     position: fixed;
@@ -14,7 +16,7 @@ $cursor-b: 100px;
     border-radius: 50%;
     border: 1px solid black;
     pointer-events: none;
-    transition: top 0.08s, left 0.08s, height 0.5s, width 0.5s;
+    transition: top 0.06s, left 0.06s, height 0.5s, width 0.5s;
     z-index: 10000;
 }
 
