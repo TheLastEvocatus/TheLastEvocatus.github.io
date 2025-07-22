@@ -105,57 +105,6 @@ body.no-scroll {
     transform: translate(-10%, 10%);
   }
 }
-dec {
-  position: absolute;
-  width: 0.75rem;
-  background-color: black;
-  z-index: 1000;
-}
-
-.dec-left_1 {
-  left: 1.9rem;
-}
-
-.dec-left_2 {
-  left: 0.4rem;
-  width: 1.25rem;
-}
-
-.dec-right_1 {
-  right: 1.9rem;
-}
-
-.dec-right_2 {
-  right: 0.4rem;
-  width: 1.25rem;
-}
-
-.dec-n {
-  top: 0;
-  height: 7.5rem;
-}
-
-.dec-f {
-  bottom: 0;
-  height: 3.3rem !important;
-}
-
-.dec-v {
-  top: 115px;
-  height: 30rem !important;
-  z-index: -1000;
-  opacity: 0.1;
-  background: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0)) !important;
-}
-
-.dec-b {
-  bottom: 3rem;
-  height: 10rem !important;
-  z-index: -1000;
-  opacity: 0.1;
-  background: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0)) !important;
-}
-
 nav {
   position: relative;
   width: 100%;
@@ -248,6 +197,112 @@ footer {
   align-items: center;
 }
 
+dec {
+  position: absolute;
+  width: 0.75rem;
+  background-color: black;
+  z-index: 1000;
+}
+
+.dec-left_1 {
+  left: 1.9rem;
+}
+
+.dec-left_2 {
+  left: 0.4rem;
+  width: 1.25rem;
+}
+
+.dec-right_1 {
+  right: 1.9rem;
+}
+
+.dec-right_2 {
+  right: 0.4rem;
+  width: 1.25rem;
+}
+
+.dec-n {
+  top: 0;
+  height: 7.5rem;
+}
+
+.dec-f {
+  bottom: 0;
+  height: 3.3rem !important;
+}
+
+.dec-v {
+  top: 115px;
+  height: 30rem !important;
+  z-index: -1000;
+  opacity: 0.1;
+  background: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0)) !important;
+}
+
+.dec-b {
+  bottom: 3rem;
+  height: 10rem !important;
+  z-index: -1000;
+  opacity: 0.1;
+  background: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0)) !important;
+}
+
+@media only screen and (max-width: 1100px) {
+  .logo {
+    max-width: 0 !important;
+  }
+  sm-grid_2 {
+    grid-template-areas: "a b" !important;
+  }
+  .cursor {
+    border: 0px !important;
+    z-index: 0 !important;
+    width: 0 !important;
+    height: 0 !important;
+  }
+  gallery grid-gallery a :hover {
+    opacity: 0.66;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .navigation-wrapper .navigation-buttons-wrapper a {
+    min-width: 42vw !important;
+  }
+  .title {
+    font-size: 0px !important;
+  }
+  .motto {
+    font-size: 0px !important;
+  }
+  .nav-left {
+    margin: 0;
+    padding: 0;
+    width: 0;
+    height: 0;
+  }
+  .nav-right {
+    margin-right: auto;
+  }
+  .text-area {
+    font-size: 24px !important;
+  }
+  grid {
+    gap: 2rem !important;
+    grid-template-areas: "a" "b" "c" !important;
+  }
+  html {
+    scrollbar-width: none !important;
+    scrollbar-color: transparent transparent !important;
+  }
+  sm-grid_1 {
+    grid-template-areas: "a b";
+  }
+  hr {
+    margin-top: 0.4rem;
+    margin-bottom: 0.4rem;
+  }
+}
 grid {
   position: relative;
   display: grid;
@@ -390,111 +445,4 @@ sm-grid_2 div a :hover {
   max-height: 150px;
   height: 100%;
   padding: 1vw;
-}
-
-dec {
-  position: absolute;
-  width: 0.75rem;
-  background-color: black;
-  z-index: 1000;
-}
-
-.dec-left_1 {
-  left: 1.9rem;
-}
-
-.dec-left_2 {
-  left: 0.4rem;
-  width: 1.25rem;
-}
-
-.dec-right_1 {
-  right: 1.9rem;
-}
-
-.dec-right_2 {
-  right: 0.4rem;
-  width: 1.25rem;
-}
-
-.dec-n {
-  top: 0;
-  height: 7.5rem;
-}
-
-.dec-f {
-  bottom: 0;
-  height: 3.3rem !important;
-}
-
-.dec-v {
-  top: 115px;
-  height: 30rem !important;
-  z-index: -1000;
-  opacity: 0.1;
-  background: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0)) !important;
-}
-
-.dec-b {
-  bottom: 3rem;
-  height: 10rem !important;
-  z-index: -1000;
-  opacity: 0.1;
-  background: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0)) !important;
-}
-
-@media only screen and (max-width: 1100px) {
-  .logo {
-    max-width: 0 !important;
-  }
-  sm-grid_2 {
-    grid-template-areas: "a b" !important;
-  }
-  .cursor {
-    border: 0px !important;
-    z-index: 0 !important;
-    width: 0 !important;
-    height: 0 !important;
-  }
-  gallery grid-gallery a :hover {
-    opacity: 0.66;
-  }
-}
-@media only screen and (max-width: 950px) {
-  .navigation-wrapper .navigation-buttons-wrapper a {
-    min-width: 42vw !important;
-  }
-  .title {
-    font-size: 0px !important;
-  }
-  .motto {
-    font-size: 0px !important;
-  }
-  .nav-left {
-    margin: 0;
-    padding: 0;
-    width: 0;
-    height: 0;
-  }
-  .nav-right {
-    margin-right: auto;
-  }
-  .text-area {
-    font-size: 24px !important;
-  }
-  grid {
-    gap: 2rem !important;
-    grid-template-areas: "a" "b" "c" !important;
-  }
-  html {
-    scrollbar-width: none !important;
-    scrollbar-color: transparent transparent !important;
-  }
-  sm-grid_1 {
-    grid-template-areas: "a b";
-  }
-  hr {
-    margin-top: 0.4rem;
-    margin-bottom: 0.4rem;
-  }
 }/*# sourceMappingURL=nexus.css.map */

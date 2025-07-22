@@ -1,10 +1,9 @@
-﻿@import "./foundation";
-
-@import "./animation";
-
-@import "./navigation";
-
-// Nexus
+﻿@use "./variables.scss" as *;
+@use "./foundation.scss";
+@use "./animation.scss";
+@use "./navigation.scss";
+@use "./decorations.scss";
+@use "./mobile.scss";
 
 grid {
     position: relative;
@@ -168,7 +167,3 @@ sm-grid_2 {
     height: 100%;
     padding: 1vw;
 }
-
-@import "./decorations";
-
-@import "./mobile";

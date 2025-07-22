@@ -1,10 +1,9 @@
-@import "./foundation";
-
-@import "./animation";
-
-@import "./navigation";
-
-// Gallery
+@use "./variables.scss" as *;
+@use "./foundation.scss";
+@use "./animation.scss";
+@use "./navigation.scss";
+@use "./decorations.scss";
+@use "./mobile.scss";
 
 gallery {
     margin-top: auto;
@@ -59,7 +58,3 @@ gallery {
         }
     }
 }
-
-@import "./decorations";
-
-@import "./mobile";

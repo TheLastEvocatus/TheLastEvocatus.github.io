@@ -1,6 +1,4 @@
-﻿// Navigation
-
-@import "./decorations";
+﻿@use "./variables.scss" as *;
 
 nav {
     position: relative;
