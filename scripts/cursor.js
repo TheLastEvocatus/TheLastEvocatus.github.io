@@ -7,6 +7,9 @@ body.onmousemove = function (e) {
   if (e.target.dataset.mouse == "hoverable") {
     cursor.className = "cursor hover";
   }
+  if (e.target.dataset.mouse == "gallery") {
+    cursor.className = "cursor hover-gallery";
+  }
   if (e.target.dataset.mouse == "none") {
     cursor.className = "cursor";
   }

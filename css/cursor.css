@@ -16,12 +16,18 @@
   z-index: 10000;
 }
 
-.hover {
-  width: 90px;
-  height: 90px;
+.hover,
+.hover-gallery {
+  width: 80px;
+  height: 80px;
   background: rgb(220, 20, 60) !important;
   mix-blend-mode: difference;
   border: 0px !important;
+}
+
+.hover-gallery {
+  width: 160px;
+  height: 160px;
 }
 
 @keyframes click {
@@ -34,4 +40,4 @@
   100% {
     opacity: 100%;
   }
-}/*# sourceMappingURL=cursor.css.map */
+}

@@ -19,12 +19,18 @@
     z-index: 10000;
 }
 
-.hover {
+.hover,
+.hover-gallery {
     width: $cursor-b;
     height: $cursor-b;
     background: rgb(220, 20, 60) !important;
     mix-blend-mode: difference;
     border: 0px !important;
+}
+
+.hover-gallery {
+    width: $cursor-b*2;
+    height: $cursor-b*2;
 }
 
 @keyframes click {

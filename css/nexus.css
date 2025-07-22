@@ -150,7 +150,7 @@ nav {
   margin-right: 1rem;
 }
 .navigation-wrapper .logo-button :hover {
-  opacity: 0.75;
+  filter: brightness(0.8);
 }
 .navigation-wrapper .logo {
   display: block;
@@ -260,9 +260,6 @@ dec {
     z-index: 0 !important;
     width: 0 !important;
     height: 0 !important;
-  }
-  gallery grid-gallery a :hover {
-    opacity: 0.66;
   }
 }
 @media only screen and (max-width: 950px) {
@@ -445,4 +442,4 @@ sm-grid_2 div a :hover {
   max-height: 150px;
   height: 100%;
   padding: 1vw;
-}/*# sourceMappingURL=nexus.css.map */
+}

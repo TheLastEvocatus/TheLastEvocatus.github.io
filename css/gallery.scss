@@ -35,25 +35,22 @@ gallery {
 
         a {
             display: flex;
-            position: relative;
             align-self: center;
             align-items: center;
-
-            :hover {
-                transition: opacity 0.75s;
-                opacity: 0.9;
-            }
+            overflow: hidden;
+            border-top-left-radius: 5rem;
+            border-bottom-right-radius: 5rem;
 
             img {
-                display: flex;
                 width: 100%;
-                border-style: solid;
-                border-width: 2px 0 2px 0;
-                border-color: $main_colour;
-                border-radius: 2rem;
-                transition: $transition;
+                $transition-img: 0.5s;
+                transition: filter $transition-img,
+                    transform $transition-img;
+                z-index: 2
+            }
 
-
+            :hover {
+                transform: scale(1.04);
             }
         }
     }
