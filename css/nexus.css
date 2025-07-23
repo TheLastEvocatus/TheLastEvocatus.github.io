@@ -354,6 +354,7 @@ element {
 }
 .text-area .center {
   text-align: center !important;
+  text-indent: 0;
 }
 
 .social-area {
