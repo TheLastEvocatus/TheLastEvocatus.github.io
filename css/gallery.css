@@ -164,8 +164,6 @@ nav {
   grid-template-areas: "a a";
   margin-right: 2.65rem;
   margin-left: 2.65rem;
-  align-items: center;
-  justify-content: center;
 }
 .navigation-wrapper .navigation-buttons-wrapper a {
   display: flex;
@@ -186,15 +184,18 @@ nav {
   text-decoration: underline !important;
 }
 
+.emoticon {
+  font-size: 36px;
+}
+
 footer {
+  height: 48px;
   margin-top: 0;
-  padding-top: 3rem;
   position: relative;
   width: 100%;
   z-index: 100;
   background-color: crimson;
   display: flex;
-  align-items: center;
 }
 
 dec {
@@ -321,7 +322,7 @@ gallery grid-gallery {
   justify-content: center;
   grid-auto-columns: 200px;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  background: rgb(255, 255, 255);
+  background: rgba(255, 255, 255, 0.5);
   border-width: 3px 0 3px 0;
   border-color: crimson;
   border-style: solid;

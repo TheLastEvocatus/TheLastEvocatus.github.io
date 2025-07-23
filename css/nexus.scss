@@ -52,8 +52,12 @@ element {
     text-align: justify;
     text-indent: 1rem;
     color: black;
+    padding: 1rem 0 1rem 0;
     box-sizing: border-box;
-    padding: 0 2rem 0 2rem;
+
+    p {
+        padding: 0 2rem 0 2rem;
+    }
 
     .center {
         text-align: center !important;
@@ -84,6 +88,22 @@ sm-grid_2 {
     box-sizing: border-box;
     border-radius: 1rem;
     transition: $transition;
+
+    div {
+        :hover {
+            background-color: $main_colour;
+            border-color: black;
+            border-radius: 0.75rem;
+        }
+
+        a {
+            transition: $transition;
+
+            :hover {
+                background-color: transparent;
+            }
+        }
+    }
 }
 
 sm-grid_1 {
@@ -124,25 +144,6 @@ sm-grid_2 {
     }
 }
 
-sm-grid_1,
-sm-grid_2 {
-    div {
-        :hover {
-            background-color: $main_colour;
-            border-color: black;
-            border-radius: 0.75rem;
-        }
-
-        a {
-            transition: $transition;
-
-            :hover {
-                background-color: transparent;
-            }
-        }
-    }
-}
-
 .smg-a {
     grid-area: a;
 }
@@ -165,5 +166,5 @@ sm-grid_2 {
     max-width: 150px;
     max-height: 150px;
     height: 100%;
-    padding: 1vw;
+    padding: 1.5rem;
 }

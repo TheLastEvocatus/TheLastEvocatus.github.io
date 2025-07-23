@@ -26,7 +26,7 @@ gallery {
         justify-content: center;
         grid-auto-columns: 200px;
         grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-        background: rgb(255, 255, 255);
+        background: rgba(255, 255, 255, 0.5);
         border-width: 3px 0 3px 0;
         border-color: $main_colour;
         border-style: solid;
