@@ -1,14 +1,15 @@
-﻿@media only screen and (max-width: 1100px) {
+﻿@use "./variables.scss" as *;
+
+@media only screen and (min-width: 1000px) {
+    * {
+        cursor: none;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
 
     .logo {
         max-width: 0 !important;
-    }
-
-    sm-grid_2 {
-        grid-template-areas:
-            "a b"
-            //"c d"
-            !important;
     }
 
     .cursor {
@@ -17,13 +18,16 @@
         width: 0 !important;
         height: 0 !important;
     }
-}
 
-@media only screen and (max-width: 950px) {
+    .navigation-wrapper .navigation-buttons-wrapper {
+        width: 100% !important;
+        margin-left: $distance + $width;
 
-    .navigation-wrapper .navigation-buttons-wrapper a {
-        min-width: 42vw !important;
+        a {
+            width: 100% !important;
+        }
     }
+
 
     .title {
         font-size: 0px !important;
@@ -41,14 +45,14 @@
     }
 
     .nav-right {
-        margin-right: auto;
+        width: 100%;
     }
 
     .text-area {
-        font-size: 24px !important;
+        font-size: 22px !important;
     }
 
-    grid {
+    .grid {
         gap: 2rem !important;
         grid-template-areas:
             "a"
@@ -61,9 +65,14 @@
         scrollbar-color: transparent transparent !important;
     }
 
-    sm-grid_1 {
+    .sm-grid_1,
+    .sm-grid_2 {
+        gap: 2rem !important;
+    }
+
+    .sm-grid_1 {
         grid-template-areas:
-            "a b";
+            "a b" !important;
     }
 
     hr {

@@ -115,10 +115,6 @@ nav {
   transition: 500ms ease-in-out;
 }
 
-.nav-right {
-  margin-left: auto;
-}
-
 .nav-left {
   margin-right: auto;
   padding-left: 5rem;
@@ -130,9 +126,8 @@ nav {
 }
 .nav-left .motto {
   margin: auto;
-  margin-bottom: 0.5rem;
   font-family: "Railway";
-  font-size: 11.5px;
+  font-size: 12px;
   text-align: center;
   transition: 175ms cubic-bezier(0.65, 0.05, 0.36, 1);
 }
@@ -147,14 +142,14 @@ nav {
 }
 .navigation-wrapper .logo-button {
   display: flex;
-  margin-right: 1rem;
+  margin-right: 0.8rem;
 }
 .navigation-wrapper .logo-button :hover {
   filter: brightness(0.8);
 }
 .navigation-wrapper .logo {
   display: block;
-  max-width: 5rem;
+  max-width: 5.5rem;
   width: 100%;
   transition: 175ms cubic-bezier(0.65, 0.05, 0.36, 1);
 }
@@ -163,7 +158,6 @@ nav {
   display: inline-grid;
   grid-template-areas: "a a";
   margin-right: 2.65rem;
-  margin-left: 2.65rem;
 }
 .navigation-wrapper .navigation-buttons-wrapper a {
   display: flex;
@@ -249,12 +243,14 @@ dec {
   background: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0)) !important;
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (min-width: 1000px) {
+  * {
+    cursor: none;
+  }
+}
+@media only screen and (max-width: 1000px) {
   .logo {
     max-width: 0 !important;
-  }
-  sm-grid_2 {
-    grid-template-areas: "a b" !important;
   }
   .cursor {
     border: 0px !important;
@@ -262,10 +258,12 @@ dec {
     width: 0 !important;
     height: 0 !important;
   }
-}
-@media only screen and (max-width: 950px) {
+  .navigation-wrapper .navigation-buttons-wrapper {
+    width: 100% !important;
+    margin-left: 2.65rem;
+  }
   .navigation-wrapper .navigation-buttons-wrapper a {
-    min-width: 42vw !important;
+    width: 100% !important;
   }
   .title {
     font-size: 0px !important;
@@ -280,12 +278,12 @@ dec {
     height: 0;
   }
   .nav-right {
-    margin-right: auto;
+    width: 100%;
   }
   .text-area {
-    font-size: 24px !important;
+    font-size: 22px !important;
   }
-  grid {
+  .grid {
     gap: 2rem !important;
     grid-template-areas: "a" "b" "c" !important;
   }
@@ -293,8 +291,12 @@ dec {
     scrollbar-width: none !important;
     scrollbar-color: transparent transparent !important;
   }
-  sm-grid_1 {
-    grid-template-areas: "a b";
+  .sm-grid_1,
+  .sm-grid_2 {
+    gap: 2rem !important;
+  }
+  .sm-grid_1 {
+    grid-template-areas: "a b" !important;
   }
   hr {
     margin-top: 0.4rem;
@@ -311,6 +313,7 @@ gallery {
   padding: 3rem 4rem 15rem 4rem;
   align-items: center;
   box-sizing: border-box;
+  transition: 175ms cubic-bezier(0.65, 0.05, 0.36, 1);
 }
 gallery grid-gallery {
   position: relative;
@@ -329,13 +332,18 @@ gallery grid-gallery {
   border-radius: 0.75rem;
   box-sizing: border-box;
 }
+gallery grid-gallery :hover {
+  border-top-left-radius: 0rem;
+  border-bottom-right-radius: 0rem;
+}
 gallery grid-gallery a {
   display: flex;
   align-self: center;
   align-items: center;
   overflow: hidden;
-  border-top-left-radius: 5rem;
-  border-bottom-right-radius: 5rem;
+  border-top-left-radius: 6rem;
+  border-bottom-right-radius: 6rem;
+  transition: 175ms cubic-bezier(0.65, 0.05, 0.36, 1);
 }
 gallery grid-gallery a img {
   width: 100%;
@@ -344,4 +352,5 @@ gallery grid-gallery a img {
 }
 gallery grid-gallery a :hover {
   transform: scale(1.04);
+  transition: 175ms cubic-bezier(0.65, 0.05, 0.36, 1);
 }

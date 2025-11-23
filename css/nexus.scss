@@ -5,7 +5,7 @@
 @use "./partials/decorations.scss";
 @use "./partials/mobile.scss";
 
-grid {
+.grid {
     position: relative;
     display: grid;
     grid-template-areas:
@@ -50,7 +50,6 @@ element {
     font-family: 'SourceHanSerifCN', 'Times New Roman';
     font-size: 20px;
     text-align: justify;
-    text-indent: 1rem;
     color: black;
     padding: 1rem 0 1rem 0;
     box-sizing: border-box;
@@ -78,11 +77,11 @@ hr {
     margin-bottom: 0.5rem;
 }
 
-sm-grid_1,
-sm-grid_2 {
+.sm-grid_1,
+.sm-grid_2 {
     display: grid;
     width: 100%;
-    padding: 1rem;
+    padding: 1.1rem;
     gap: 0.75rem;
     justify-content: stretch;
     align-items: stretch;
@@ -91,58 +90,41 @@ sm-grid_2 {
     transition: $transition;
 
     div {
+
         :hover {
             background-color: $main_colour;
             border-color: black;
-            border-radius: 0.75rem;
+            border-radius: 2rem;
         }
 
         a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-width: 1px 1px 4px 1px;
+            border-color: crimson;
+            border-style: solid;
+            border-radius: 0.75rem;
+
             transition: $transition;
 
             :hover {
                 background-color: transparent;
+
             }
         }
     }
 }
 
-sm-grid_1 {
+.sm-grid_1 {
     grid-template-areas:
         "a" "b";
-
-    div {
-
-        a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-width: 2px 0 2px 0;
-            border-color: crimson;
-            border-style: solid;
-            border-radius: 0.75rem;
-        }
-    }
 }
 
-sm-grid_2 {
+.sm-grid_2 {
     grid-template-areas:
         "a b"
-        //"c d"
     ;
-
-    div {
-
-        a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-width: 2px 0 2px 0;
-            border-color: crimson;
-            border-style: solid;
-            border-radius: 0.75rem;
-        }
-    }
 }
 
 .smg-a {

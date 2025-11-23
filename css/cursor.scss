@@ -1,11 +1,5 @@
 @use "./partials/variables.scss" as *;
 
-@media only screen and (min-width: 1100px) {
-    * {
-        cursor: none;
-    }
-}
-
 .cursor {
     position: fixed;
     width: $cursor;
@@ -29,8 +23,8 @@
 }
 
 .hover-gallery {
-    width: $cursor-b*2;
-    height: $cursor-b*2;
+    width: $cursor-b*1.8;
+    height: $cursor-b*1.8;
 }
 
 @keyframes click {
