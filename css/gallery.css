@@ -178,10 +178,6 @@ nav {
   text-decoration: underline !important;
 }
 
-.emoticon {
-  font-size: 36px;
-}
-
 footer {
   height: 48px;
   margin-top: 0;
@@ -290,10 +286,6 @@ dec {
   html {
     scrollbar-width: none !important;
     scrollbar-color: transparent transparent !important;
-  }
-  .sm-grid_1,
-  .sm-grid_2 {
-    gap: 2rem !important;
   }
   .sm-grid_1 {
     grid-template-areas: "a b" !important;

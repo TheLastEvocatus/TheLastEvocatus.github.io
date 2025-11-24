@@ -65,11 +65,6 @@
         scrollbar-color: transparent transparent !important;
     }
 
-    .sm-grid_1,
-    .sm-grid_2 {
-        gap: 2rem !important;
-    }
-
     .sm-grid_1 {
         grid-template-areas:
             "a b" !important;
