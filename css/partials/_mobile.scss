@@ -8,44 +8,21 @@
 
 @media only screen and (max-width: 1000px) {
 
-    .logo {
-        max-width: 0 !important;
+    .logo,
+    .cursor,
+    .title,
+    .motto,
+    .nav-left {
+        display: none !important;
     }
 
-    .cursor {
-        border: 0px !important;
-        z-index: 0 !important;
-        width: 0 !important;
-        height: 0 !important;
-    }
-
-    .navigation-wrapper .navigation-buttons-wrapper {
+    .navigation-wrapper,
+    .navigation-buttons-wrapper {
         width: 100% !important;
-        margin-left: $distance + $width;
 
         a {
             width: 100% !important;
         }
-    }
-
-
-    .title {
-        font-size: 0px !important;
-    }
-
-    .motto {
-        font-size: 0px !important;
-    }
-
-    .nav-left {
-        margin: 0;
-        padding: 0;
-        width: 0;
-        height: 0;
-    }
-
-    .nav-right {
-        width: 100%;
     }
 
     .text-area {
@@ -58,11 +35,6 @@
             "a"
             "b"
             "c" !important;
-    }
-
-    html {
-        scrollbar-width: none !important;
-        scrollbar-color: transparent transparent !important;
     }
 
     .sm-grid_1 {

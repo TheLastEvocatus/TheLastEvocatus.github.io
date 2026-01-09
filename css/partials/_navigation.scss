@@ -1,27 +1,36 @@
 ﻿@use "./variables.scss" as *;
 
-$glow_1_transparency: 1;
-$glow_2_transparency: .3;
-
 nav {
     position: relative;
-    height: 115px;
-    width: 100%;
-    z-index: 100;
     background-color: $main_colour;
     display: flex;
     align-items: center;
-    transition: 500ms ease-in-out;
+    padding: 0 $distance+$width;
+    height: 115px;
+    grid-gap: 85px;
 }
 
 .nav-left {
-    margin-right: auto;
-    padding-left: 5rem;
+    font-size: 36px;
+
+    .logo-button {
+        display: flex;
+        margin-right: 10px;
+        margin-left: 15px;
+
+        :hover {
+            filter: opacity(0.6);
+        }
+    }
+
+    .logo {
+        max-width: 5.5rem;
+        width: 100%;
+    }
 
     .title {
         margin: auto;
         text-align: center;
-        transition: $transition;
     }
 
     .motto {
@@ -29,7 +38,6 @@ nav {
         font-family: 'Railway';
         font-size: 12px;
         text-align: center;
-        transition: $transition;
     }
 }
 
@@ -38,61 +46,53 @@ nav {
     display: flex;
     align-items: center;
     font-family: 'Norwester';
-    font-size: 36px;
     color: $secondary_colour;
-
-
-    .logo-button {
-        display: flex;
-        margin-right: 0.8rem;
-
-        :hover {
-            filter: opacity(0.8);
-        }
-    }
-
-    .logo {
-        display: block;
-        max-width: 5.5rem;
-        width: 100%;
-        transition: $transition;
-    }
+    width: 100%;
+    height: 100%;
 
     .navigation-buttons-wrapper {
         position: relative;
-        display: inline-grid;
+        display: grid;
         grid-template-areas:
             "a a";
-        margin-right: $distance + $width;
+        width: 100%;
+        height: 100%;
 
         a {
             display: flex;
             justify-content: center;
             position: relative;
+            text-decoration: inherit;
+            transition: 200ms cubic-bezier(.65, .05, .36, 1);
             color: $secondary_colour;
-            text-decoration: none;
-            min-width: 15rem;
-            width: 15vw;
-            transition: 100ms cubic-bezier(.65, .05, .36, 1);
+            background-color: rgba($tetriary_colour, .075);
+            min-width: 200px;
 
-            .text-active {
-                filter: drop-shadow(0px 0px 3px rgba(orange, $glow_1_transparency)) drop-shadow(0px 0px 15px rgba($secondary_colour, $glow_2_transparency))
+            .nav-active {
+                filter: drop-shadow(0px 0px 2px rgba(orange, 1)) drop-shadow(0px 0px 25px rgba($secondary_colour, 0.5))
             }
+
         }
 
         a:hover {
             background-color: $secondary_colour;
-            color: $main_colour;
 
             p {
-                filter: drop-shadow(0px 0px 2px rgba($main_colour, $glow_1_transparency)) drop-shadow(0px 0px 15px rgba($main_colour, $glow_2_transparency))
+                color: $tetriary_colour;
+                filter: none;
             }
         }
+
     }
 }
 
-.text-active {
+.nav-active {
     text-decoration: underline !important;
+}
+
+.nav-text {
+    font-size: 48px;
+    margin: auto;
 }
 
 footer {

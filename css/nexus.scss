@@ -21,7 +21,6 @@
     box-sizing: border-box;
     margin: auto;
     border-radius: 1rem;
-    transition: $transition;
 }
 
 element {
@@ -33,7 +32,6 @@ element {
     border-color: crimson;
     border-style: solid;
     border-radius: 0.75rem;
-    transition: $transition;
 }
 
 .heading-area {
@@ -92,7 +90,6 @@ hr {
     align-items: stretch;
     box-sizing: border-box;
     border-radius: 1rem;
-    transition: $transition;
 
     div {
 
