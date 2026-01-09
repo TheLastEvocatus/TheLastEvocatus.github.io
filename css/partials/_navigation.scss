@@ -1,7 +1,11 @@
 ﻿@use "./variables.scss" as *;
 
+$glow_1_transparency: 1;
+$glow_2_transparency: .3;
+
 nav {
     position: relative;
+    height: 115px;
     width: 100%;
     z-index: 100;
     background-color: $main_colour;
@@ -37,12 +41,13 @@ nav {
     font-size: 36px;
     color: $secondary_colour;
 
+
     .logo-button {
         display: flex;
         margin-right: 0.8rem;
 
         :hover {
-            filter: brightness(0.8);
+            filter: opacity(0.8);
         }
     }
 
@@ -64,21 +69,29 @@ nav {
             display: flex;
             justify-content: center;
             position: relative;
-            color: inherit;
+            color: $secondary_colour;
             text-decoration: none;
             min-width: 15rem;
             width: 15vw;
             transition: 100ms cubic-bezier(.65, .05, .36, 1);
+
+            .text-active {
+                filter: drop-shadow(0px 0px 3px rgba(orange, $glow_1_transparency)) drop-shadow(0px 0px 15px rgba($secondary_colour, $glow_2_transparency))
+            }
         }
 
         a:hover {
             background-color: $secondary_colour;
             color: $main_colour;
+
+            p {
+                filter: drop-shadow(0px 0px 2px rgba($main_colour, $glow_1_transparency)) drop-shadow(0px 0px 15px rgba($main_colour, $glow_2_transparency))
+            }
         }
     }
 }
 
-.text-underline {
+.text-active {
     text-decoration: underline !important;
 }
 
