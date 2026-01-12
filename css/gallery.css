@@ -197,7 +197,7 @@ footer {
   z-index: 100;
   background-color: crimson;
   text-align: center;
-  align-content: center;
+  align-self: center;
 }
 
 .copyright {
