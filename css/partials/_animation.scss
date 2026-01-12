@@ -9,8 +9,8 @@
 .img-gear {
     position: relative;
     width: 100%;
-    opacity: 0.03;
-    animation: rotate-TL 300s linear infinite;
+    opacity: 0.05;
+    animation: rotate-TL 180s linear infinite;
 }
 
 @keyframes rotate-TL {
@@ -32,7 +32,7 @@ body {
         content: "";
         height: 300%;
         left: -50%;
-        opacity: 0.4;
+        opacity: 0.5;
         position: fixed;
         top: -110%;
         width: 300%;

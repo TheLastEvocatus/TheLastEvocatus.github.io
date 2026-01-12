@@ -1,28 +1,28 @@
 .cursor {
   position: fixed;
-  width: 11px;
-  height: 11px;
+  width: 12px;
+  height: 12px;
   transform: translate(-50%, -50%);
-  background: rgba(220, 20, 60, 0.66);
+  background: rgba(220, 20, 60, 0.6);
   border-radius: 50%;
   border: 1px solid black;
   pointer-events: none;
-  transition: top 0.06s, left 0.06s, height 0.5s, width 0.5s;
+  transition: top 0s, left 0s, height 0.5s, width 0.5s;
   z-index: 10000;
 }
 
 .hover,
 .hover-gallery {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   background: rgb(220, 20, 60) !important;
   mix-blend-mode: difference;
   border: 0px !important;
 }
 
 .hover-gallery {
-  width: 144px;
-  height: 144px;
+  width: 90px;
+  height: 90px;
 }
 
 @keyframes click {

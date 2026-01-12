@@ -4,13 +4,13 @@ var body = document.getElementById("body");
 body.onmousemove = function (e) {
   cursor.style.top = e.clientY + "px";
   cursor.style.left = e.clientX + "px";
-  if (e.target.dataset.mouse == "hoverable") {
+  if (e.target.dataset.mouse == "active") {
     cursor.className = "cursor hover";
   }
   if (e.target.dataset.mouse == "gallery") {
     cursor.className = "cursor hover-gallery";
   }
-  if (e.target.dataset.mouse == "none") {
+  if (e.target.dataset.mouse == null) {
     cursor.className = "cursor";
   }
 };

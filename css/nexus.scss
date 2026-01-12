@@ -27,17 +27,23 @@ element {
     position: relative;
     text-align: center;
     width: 100%;
-    background: rgba(255, 255, 255, 0.5);
-    border-width: 3px 0 3px 0;
+    background: rgba(255, 255, 255, 0);
+    border-width: 3px 1px;
     border-color: crimson;
     border-style: solid;
-    border-radius: 0.75rem;
+    border-radius: 10px;
+}
+
+.heading-area,
+.text-area,
+.links-area {
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 .heading-area {
     grid-area: a;
     font-family: 'Norwester';
-    padding: 24px 12px 24px 12px;
+    padding: 24px 12px;
     font-size: 60px;
     color: black;
     box-sizing: border-box;
@@ -49,11 +55,12 @@ element {
     font-size: 20px;
     text-align: justify;
     color: black;
-    padding: 1rem 0 1rem 0;
+    padding: 1rem 0;
     box-sizing: border-box;
 
     p {
-        padding: 0 2rem 0 2rem;
+        padding: 0 2rem;
+        text-indent: 25px;
     }
 
     .center {
@@ -86,17 +93,14 @@ hr {
     width: 100%;
     padding: 1.1rem;
     gap: 0.75rem;
-    justify-content: stretch;
-    align-items: stretch;
     box-sizing: border-box;
-    border-radius: 1rem;
 
     div {
 
         :hover {
             background-color: $main_colour;
             border-color: black;
-            border-radius: 2rem;
+            border-radius: 30px;
         }
 
         a {
@@ -106,8 +110,7 @@ hr {
             border-width: 1px 1px 4px 1px;
             border-color: crimson;
             border-style: solid;
-            border-radius: 0.75rem;
-
+            border-radius: 10px;
             transition: $transition;
 
             :hover {
@@ -152,4 +155,8 @@ hr {
     max-height: 150px;
     height: 100%;
     padding: 1.5rem;
+}
+
+micro {
+    font-size: 50%;
 }

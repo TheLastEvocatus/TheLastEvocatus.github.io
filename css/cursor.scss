@@ -1,15 +1,18 @@
 @use "./partials/variables.scss" as *;
 
+$cursor: 12px;
+$cursor-b: 60px;
+
 .cursor {
     position: fixed;
     width: $cursor;
     height: $cursor;
     transform: translate(-50%, -50%);
-    background: rgba(220, 20, 60, 0.66);
+    background: rgba(220, 20, 60, 0.6);
     border-radius: 50%;
     border: 1px solid black;
     pointer-events: none;
-    transition: top 0.06s, left 0.06s, height 0.5s, width 0.5s;
+    transition: top 0s, left 0s, height 0.5s, width 0.5s;
     z-index: 10000;
 }
 
@@ -23,8 +26,8 @@
 }
 
 .hover-gallery {
-    width: $cursor-b*1.8;
-    height: $cursor-b*1.8;
+    width: $cursor-b*1.5;
+    height: $cursor-b*1.5;
 }
 
 @keyframes click {

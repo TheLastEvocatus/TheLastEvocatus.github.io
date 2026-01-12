@@ -26,7 +26,7 @@
     }
 
     .text-area {
-        font-size: 22px !important;
+        font-size: 24px !important;
     }
 
     .grid {
@@ -45,5 +45,13 @@
     hr {
         margin-top: 0.4rem;
         margin-bottom: 0.4rem;
+    }
+
+    .navigation-wrapper {
+        .navigation-buttons-wrapper {
+            a {
+                background-color: rgba($tetriary_colour, 0);
+            }
+        }
     }
 }

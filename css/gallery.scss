@@ -5,6 +5,8 @@
 @use "./partials/decorations.scss";
 @use "./partials/mobile.scss";
 
+$transition-img: all 0.5s;
+
 gallery {
     margin-top: auto;
     display: flex;
@@ -15,7 +17,6 @@ gallery {
     padding: 3rem 4rem 15rem 4rem;
     align-items: center;
     box-sizing: border-box;
-    transition: $transition;
 
     grid-gallery {
         position: relative;
@@ -23,15 +24,15 @@ gallery {
         display: grid;
         margin: auto;
         width: 100%;
-        gap: 2rem;
+        gap: 50px;
         justify-content: center;
         grid-auto-columns: 200px;
         grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
         background: rgba(255, 255, 255, 0.5);
-        border-width: 3px 0 3px 0;
+        border-width: 3px 0px;
         border-color: $main_colour;
         border-style: solid;
-        border-radius: 0.75rem;
+        border-radius: 10px;
         box-sizing: border-box;
 
         :hover {
@@ -46,19 +47,17 @@ gallery {
             overflow: hidden;
             border-top-left-radius: 6rem;
             border-bottom-right-radius: 6rem;
-            transition: $transition;
+            transition: $transition-img;
 
             img {
                 width: 100%;
-                $transition-img: 0.5s;
-                transition: filter $transition-img,
-                    transform $transition-img;
-                z-index: 2
+                transition: $transition-img;
+                isolation: isolate;
             }
 
             :hover {
-                transform: scale(1.04);
-                transition: $transition;
+                transform: scale(1.05);
+                transition: $transition-img;
             }
         }
     }
